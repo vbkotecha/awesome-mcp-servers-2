@@ -76,7 +76,7 @@ Reference implementations, SDKs, and core protocol tooling from the MCP ecosyste
   `reference` `memory` `official`
 - **[MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)** `Official` `Python` — Official Python SDK for building MCP servers and clients.  
   `sdk` `python` `official`
-- **[MCP Registry](https://github.com/modelcontextprotocol/registry)** `Official` `Go` — Community-driven registry service and API for discovering MCP servers.  
+- **[MCP Registry](https://github.com/modelcontextprotocol/registry)** `Official` `Go` — Official MCP registry service and API for discovering publicly available MCP servers.  
   `registry` `discovery` `official`
 - **[MCP Sequential Thinking](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking)** `Official` `TypeScript` — Structured step-by-step reasoning tool for complex problem solving.  
   `reference` `reasoning` `official`
@@ -91,31 +91,31 @@ Reference implementations, SDKs, and core protocol tooling from the MCP ecosyste
 
 Query, manage, and explore databases, vector stores, and data warehouses.
 
-- **[Chroma MCP Server](https://github.com/chroma-core/chroma-mcp)** `Python` — Vector search and embedding storage with Chroma collections.  
+- **[Chroma MCP Server](https://github.com/chroma-core/chroma-mcp)** `Official` `Python` — Vector search and embedding storage with Chroma collections.  
   `vector` `embeddings` `rag`
-- **[DBHub](https://github.com/bytebase/dbhub)** `Go` — Universal database gateway supporting PostgreSQL, MySQL, SQL Server, SQLite, and MariaDB.  
+- **[DBHub](https://github.com/bytebase/dbhub)** `Official` `Go` — Universal database gateway supporting PostgreSQL, MySQL, SQL Server, SQLite, and MariaDB.  
   `sql` `postgres` `mysql`
-- **[DuckDB MCP Server](https://github.com/motherduckdb/mcp-server-motherduck)** `Python` — Run analytical SQL queries against DuckDB databases and files.  
+- **[DuckDB MCP Server](https://github.com/motherduckdb/mcp-server-motherduck)** `Official` `Python` — Run analytical SQL queries against DuckDB databases and files.  
   `analytics` `sql` `olap`
-- **[Elasticsearch MCP Server](https://github.com/elastic/mcp-server-elasticsearch)** `TypeScript` — Search and analyze data in Elasticsearch clusters via MCP.  
+- **[Elasticsearch MCP Server](https://github.com/elastic/mcp-server-elasticsearch)** `Official` `TypeScript` — Search and analyze data in Elasticsearch clusters via MCP.  
   `search` `analytics` `elastic`
-- **[MongoDB MCP Server](https://github.com/mongodb-js/mongodb-mcp-server)** `TypeScript` — Query and manage MongoDB databases and collections from AI clients.  
+- **[MongoDB MCP Server](https://github.com/mongodb-js/mongodb-mcp-server)** `Official` `TypeScript` — Query and manage MongoDB databases and collections from AI clients.  
   `mongodb` `nosql` `documents`
-- **[Neon MCP Server](https://github.com/neondatabase/mcp-server-neon)** `TypeScript` — Manage Neon Postgres databases, branches, and SQL queries via MCP.  
+- **[Neon MCP Server](https://github.com/neondatabase/mcp-server-neon)** `Official` `TypeScript` — Manage Neon Postgres databases, branches, and SQL queries via MCP.  
   `postgres` `serverless` `sql`
-- **[Pinecone MCP Server](https://github.com/pinecone-io/pinecone-mcp)** `TypeScript` — Manage Pinecone indexes and run semantic vector queries.  
+- **[Pinecone MCP Server](https://github.com/pinecone-io/pinecone-mcp)** `Official` `TypeScript` — Manage Pinecone indexes and run semantic vector queries.  
   `vector` `search` `rag`
-- **[PlanetScale MCP Server](https://planetscale.com/docs/connect/mcp)** `TypeScript` — Manage PlanetScale MySQL databases, branches, and schema changes.  
+- **[PlanetScale MCP Server](https://planetscale.com/docs/connect/mcp)** `Official` `TypeScript` — Manage PlanetScale MySQL databases, branches, and schema changes.  
   `mysql` `serverless` `sql`
-- **[Qdrant MCP Server](https://github.com/qdrant/mcp-server-qdrant)** `Python` — Store and retrieve vectors in Qdrant for RAG workflows.  
+- **[Qdrant MCP Server](https://github.com/qdrant/mcp-server-qdrant)** `Official` `Python` — Store and retrieve vectors in Qdrant for RAG workflows.  
   `vector` `search` `rag`
-- **[Redis MCP Server](https://github.com/redis/mcp-redis)** `Python` — Read and write Redis keys, lists, and data structures through MCP.  
+- **[Redis MCP Server](https://github.com/redis/mcp-redis)** `Official` `Python` — Read and write Redis keys, lists, and data structures through MCP.  
   `redis` `cache` `kv`
-- **[Snowflake MCP Server](https://github.com/Snowflake-Labs/mcp)** `Python` — Query Snowflake warehouses and manage data platform resources.  
+- **[Snowflake MCP Server](https://github.com/Snowflake-Labs/mcp)** `Official` `Python` — Query Snowflake warehouses and manage data platform resources.  
   `warehouse` `sql` `analytics`
 - **[SQLite MCP Server](https://github.com/ktanaka101/mcp-server-duckdb)** `Python` — Lightweight SQLite database access for local development workflows.  
   `sqlite` `local` `sql`
-- **[Supabase MCP Server](https://github.com/supabase-community/supabase-mcp)** `TypeScript` — Interact with Supabase projects, tables, and auth through MCP tools.  
+- **[Supabase MCP Server](https://github.com/supabase-community/supabase-mcp)** `TypeScript` — Community-maintained integration for Supabase projects, tables, and auth through MCP tools.  
   `postgres` `backend` `sql`
 
 <a id="developer-tools-and-code-intelligence"></a>
@@ -124,27 +124,27 @@ Query, manage, and explore databases, vector stores, and data warehouses.
 
 Repositories, CI/CD, observability, and coding workflows for software teams.
 
-- **[Context7 MCP](https://github.com/upstash/context7)** `TypeScript` — Up-to-date library and framework documentation injected into prompts.  
+- **[Context7 MCP](https://github.com/upstash/context7)** `Official` `TypeScript` — Up-to-date library and framework documentation injected into prompts.  
   `docs` `libraries` `coding`
-- **[Docker MCP Server](https://github.com/docker/mcp-gateway)** `Go` — Manage containers, images, and Docker environments through MCP.  
+- **[Docker MCP Server](https://github.com/docker/mcp-gateway)** `Official` `Go` — Manage containers, images, and Docker environments through MCP.  
   `containers` `devops` `docker`
-- **[E2B MCP Server](https://github.com/e2b-dev/mcp-server)** `TypeScript` — Execute code in secure cloud sandboxes for agentic coding workflows.  
+- **[E2B MCP Server](https://github.com/e2b-dev/mcp-server)** `Official` `TypeScript` — Execute code in secure cloud sandboxes for agentic coding workflows.  
   `sandbox` `code-execution` `agents`
 - **[GitHub MCP Server](https://github.com/github/github-mcp-server)** `Official` `Go` — Official GitHub integration for repos, issues, pull requests, and code search.  
   `github` `git` `ci-cd`
-- **[GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server/)** `Ruby` — GitLab Duo MCP server for merge requests, issues, and project management.  
+- **[GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server/)** `Official` `Ruby` — GitLab Duo MCP server for merge requests, issues, and project management.  
   `gitlab` `devops` `issues`
 - **[Kubernetes MCP Server](https://github.com/Flux159/mcp-server-kubernetes)** `TypeScript` — Operate Kubernetes clusters with kubectl-style MCP tools.  
   `kubernetes` `devops` `cloud`
-- **[Linear MCP Server](https://linear.app/docs/mcp)** `TypeScript` — Create and manage Linear issues, projects, and team workflows.  
+- **[Linear MCP Server](https://linear.app/docs/mcp)** `Official` `TypeScript` — Create and manage Linear issues, projects, and team workflows.  
   `issues` `project-management` `product`
-- **[Postman MCP Server](https://github.com/postmanlabs/postman-mcp-server)** `TypeScript` — Explore and run Postman collections and API workflows from AI clients.  
+- **[Postman MCP Server](https://github.com/postmanlabs/postman-mcp-server)** `Official` `TypeScript` — Explore and run Postman collections and API workflows from AI clients.  
   `api` `testing` `http`
-- **[Semgrep MCP Server](https://github.com/semgrep/semgrep/tree/develop/cli/src/semgrep/mcp)** `Python` — Run static analysis and security scans on codebases via Semgrep.  
+- **[Semgrep MCP Server](https://github.com/semgrep/semgrep/tree/develop/cli/src/semgrep/mcp)** `Official` `Python` — Run static analysis and security scans on codebases via Semgrep.  
   `security` `sast` `code-quality`
-- **[Sentry MCP Server](https://docs.sentry.io/product/sentry-mcp/)** `TypeScript` — Investigate errors, releases, and performance issues in Sentry.  
+- **[Sentry MCP Server](https://docs.sentry.io/product/sentry-mcp/)** `Official` `TypeScript` — Investigate errors, releases, and performance issues in Sentry.  
   `observability` `errors` `monitoring`
-- **[Sourcegraph Cody MCP](https://sourcegraph.com/docs/api/mcp)** `TypeScript` — Code intelligence and search across large codebases with Cody.  
+- **[Sourcegraph Cody MCP](https://sourcegraph.com/docs/api/mcp)** `Official` `TypeScript` — Code intelligence and search across large codebases with Cody.  
   `code-search` `ai` `enterprise`
 
 <a id="browsers-search-and-web-automation"></a>
@@ -153,25 +153,25 @@ Repositories, CI/CD, observability, and coding workflows for software teams.
 
 Browse the web, scrape content, search, and automate browser interactions.
 
-- **[Apify MCP Server](https://github.com/apify/apify-mcp-server)** `TypeScript` — Run Apify Actors and extract web datasets at scale.  
+- **[Apify MCP Server](https://github.com/apify/apify-mcp-server)** `Official` `TypeScript` — Run Apify Actors and extract web datasets at scale.  
   `scraping` `actors` `data`
-- **[Brave Search MCP Server](https://github.com/brave/brave-search-mcp-server)** `TypeScript` — Privacy-focused web and local search through the Brave Search API.  
+- **[Brave Search MCP Server](https://github.com/brave/brave-search-mcp-server)** `Official` `TypeScript` — Privacy-focused web and local search through the Brave Search API.  
   `search` `privacy` `web`
-- **[Browser MCP](https://github.com/browsermcp/mcp)** `TypeScript` — Automate a local Chrome browser from MCP-compatible AI clients.  
+- **[Browser MCP](https://github.com/browsermcp/mcp)** `Official` `TypeScript` — Automate a local Chrome browser from MCP-compatible AI clients.  
   `chrome` `local` `automation`
-- **[Browserbase MCP Server](https://github.com/browserbase/mcp-server-browserbase)** `TypeScript` — Cloud browser automation for navigation, scraping, and form filling.  
+- **[Browserbase MCP Server](https://github.com/browserbase/mcp-server-browserbase)** `Official` `TypeScript` — Cloud browser automation for navigation, scraping, and form filling.  
   `browser` `cloud` `automation`
-- **[Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp)** `TypeScript` — Control and inspect Chrome through DevTools protocol for debugging and automation.  
+- **[Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp)** `Official` `TypeScript` — Control and inspect Chrome through DevTools protocol for debugging and automation.  
   `chrome` `devtools` `debugging`
-- **[Exa MCP Server](https://github.com/exa-labs/exa-mcp-server)** `TypeScript` — Neural and keyword web search optimized for AI research workflows.  
+- **[Exa MCP Server](https://github.com/exa-labs/exa-mcp-server)** `Official` `TypeScript` — Neural and keyword web search optimized for AI research workflows.  
   `search` `research` `web`
-- **[Firecrawl MCP Server](https://github.com/mendableai/firecrawl-mcp-server)** `TypeScript` — Scrape, crawl, and extract structured web data with Firecrawl.  
+- **[Firecrawl MCP Server](https://github.com/mendableai/firecrawl-mcp-server)** `Official` `TypeScript` — Scrape, crawl, and extract structured web data with Firecrawl.  
   `scraping` `crawl` `web`
 - **[Playwright MCP](https://github.com/microsoft/playwright-mcp)** `Official` `TypeScript` — Official Microsoft Playwright server for browser automation via accessibility snapshots.  
   `browser` `playwright` `automation`
 - **[Puppeteer MCP Server](https://github.com/merajmehrabi/puppeteer-mcp-server)** `TypeScript` — Headless Chrome automation using Puppeteer for scraping and testing.  
   `puppeteer` `browser` `scraping`
-- **[Tavily MCP Server](https://github.com/tavily-ai/tavily-mcp)** `Python` — AI-native search and content extraction for research agents.  
+- **[Tavily MCP Server](https://github.com/tavily-ai/tavily-mcp)** `Official` `Python` — AI-native search and content extraction for research agents.  
   `search` `research` `agents`
 
 <a id="filesystems-and-documents"></a>
@@ -184,15 +184,15 @@ Read and write files, convert documents, and connect to knowledge bases.
   `airtable` `spreadsheets` `data`
 - **[Google Drive MCP Server](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/gdrive)** `Python` — Access and search files in Google Drive from MCP clients.  
   `google-drive` `files` `cloud`
-- **[MarkItDown MCP](https://github.com/microsoft/markitdown)** `Python` — Convert PDFs, Office docs, and media into markdown for LLM ingestion.  
+- **[MarkItDown MCP](https://github.com/microsoft/markitdown)** `Official` `Python` — Convert PDFs, Office docs, and media into markdown for LLM ingestion.  
   `documents` `conversion` `markdown`
-- **[Notion MCP Server](https://github.com/makenotion/notion-mcp-server)** `TypeScript` — Read and write Notion pages, databases, and workspace content.  
+- **[Notion MCP Server](https://github.com/makenotion/notion-mcp-server)** `Official` `TypeScript` — Read and write Notion pages, databases, and workspace content.  
   `notion` `knowledge-base` `docs`
 - **[Obsidian MCP Server](https://github.com/MarkusPfundstein/mcp-obsidian)** `TypeScript` — Search and read notes from local Obsidian vaults.  
   `obsidian` `notes` `local`
 - **[PDF MCP Server](https://github.com/jztan/pdf-mcp)** `Python` — Extract text and metadata from PDF documents for analysis.  
   `pdf` `documents` `extraction`
-- **[Readwise MCP Server](https://github.com/readwiseio/readwise-mcp)** `TypeScript` — Search highlights and reading notes from Readwise.  
+- **[Readwise MCP Server](https://github.com/readwiseio/readwise-mcp)** `Official` `TypeScript` — Search highlights and reading notes from Readwise.  
   `highlights` `reading` `knowledge`
 
 <a id="cloud-and-infrastructure"></a>
@@ -203,21 +203,21 @@ Manage cloud resources, deploy services, and operate infrastructure.
 
 - **[AWS MCP Server](https://github.com/alexei-led/aws-mcp-server)** `Python` — Execute AWS CLI commands safely in a containerized environment.  
   `aws` `cloud` `cli`
-- **[Azure MCP Server](https://github.com/Azure/azure-mcp)** `TypeScript` — Manage Azure resources and services through MCP tools.  
+- **[Azure MCP Server](https://github.com/Azure/azure-mcp)** `Official` `TypeScript` — Manage Azure resources and services through MCP tools.  
   `azure` `cloud` `infra`
-- **[Cloudflare MCP Server](https://github.com/cloudflare/mcp-server-cloudflare)** `TypeScript` — Manage Workers, KV, R2, and Cloudflare platform resources.  
+- **[Cloudflare MCP Server](https://github.com/cloudflare/mcp-server-cloudflare)** `Official` `TypeScript` — Manage Workers, KV, R2, and Cloudflare platform resources.  
   `cloudflare` `edge` `workers`
-- **[Fly.io MCP Server](https://github.com/superfly/flymcp)** `TypeScript` — Manage Fly.io apps, machines, and deployments via MCP.  
+- **[Fly.io MCP Server](https://github.com/superfly/flymcp)** `Official` `TypeScript` — Manage Fly.io apps, machines, and deployments via MCP.  
   `fly` `deploy` `edge`
-- **[Port MCP Server](https://github.com/port-labs/port-mcp-server)** `TypeScript` — Manage software catalog, scorecards, and actions in Port.io.  
+- **[Port MCP Server](https://github.com/port-labs/port-mcp-server)** `Official` `TypeScript` — Manage software catalog, scorecards, and actions in Port.io.  
   `platform-engineering` `catalog` `devops`
-- **[Pulumi MCP Server](https://www.pulumi.com/docs/ai/mcp-server/)** `TypeScript` — Infrastructure as code operations with Pulumi stacks and resources.  
+- **[Pulumi MCP Server](https://www.pulumi.com/docs/ai/mcp-server/)** `Official` `TypeScript` — Infrastructure as code operations with Pulumi stacks and resources.  
   `pulumi` `iac` `cloud`
-- **[Railway MCP Server](https://github.com/railwayapp/railway-mcp-server)** `TypeScript` — Deploy services and manage Railway projects through MCP.  
+- **[Railway MCP Server](https://github.com/railwayapp/railway-mcp-server)** `Official` `TypeScript` — Deploy services and manage Railway projects through MCP.  
   `railway` `deploy` `paas`
-- **[Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server)** `Go` — Generate and validate Terraform configurations with HashiCorp tooling.  
+- **[Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server)** `Official` `Go` — Generate and validate Terraform configurations with HashiCorp tooling.  
   `terraform` `iac` `infra`
-- **[Vercel MCP Server](https://github.com/vercel/mcp-handler)** `TypeScript` — Deploy and manage Vercel projects and deployments from AI clients.  
+- **[Vercel MCP Server](https://github.com/vercel/mcp-handler)** `Official` `TypeScript` — Deploy and manage Vercel projects and deployments from AI clients.  
   `vercel` `deploy` `frontend`
 
 <a id="communication-and-productivity"></a>
@@ -226,7 +226,7 @@ Manage cloud resources, deploy services, and operate infrastructure.
 
 Integrate chat, email, calendars, and team collaboration tools.
 
-- **[Atlassian MCP Server](https://github.com/atlassian/atlassian-mcp-server)** `TypeScript` — Manage Jira issues and Confluence pages across Atlassian Cloud.  
+- **[Atlassian MCP Server](https://github.com/atlassian/atlassian-mcp-server)** `Official` `TypeScript` — Manage Jira issues and Confluence pages across Atlassian Cloud.  
   `jira` `confluence` `atlassian`
 - **[Discord MCP Server](https://github.com/SaseQ/discord-mcp)** `Python` — Read and send messages in Discord servers and channels.  
   `discord` `chat` `community`
@@ -240,7 +240,7 @@ Integrate chat, email, calendars, and team collaboration tools.
   `slack` `chat` `team`
 - **[Todoist MCP Server](https://github.com/abhiz123/todoist-mcp-server)** `TypeScript` — Manage Todoist tasks, projects, and due dates from AI assistants.  
   `tasks` `productivity` `todoist`
-- **[Zoom MCP Server](https://github.com/zoom/mcp-registry)** `TypeScript` — Schedule and manage Zoom meetings and recordings.  
+- **[Zoom MCP Server](https://github.com/zoom/mcp-registry)** `Official` `TypeScript` — Schedule and manage Zoom meetings and recordings.  
   `zoom` `meetings` `video`
 
 <a id="ai-agents-and-memory"></a>
@@ -249,23 +249,23 @@ Integrate chat, email, calendars, and team collaboration tools.
 
 LLM bridges, agent orchestration, RAG, and persistent memory layers.
 
-- **[CrewAI MCP Server](https://github.com/crewAIInc/crewAI)** `Python` — Multi-agent orchestration framework with MCP integration support.  
+- **[CrewAI MCP Server](https://github.com/crewAIInc/crewAI)** `Official` `Python` — Multi-agent orchestration framework with MCP integration support.  
   `agents` `multi-agent` `orchestration`
-- **[Graphiti MCP Server](https://github.com/getzep/graphiti)** `Python` — Temporal knowledge graphs for agent memory and context building.  
+- **[Graphiti MCP Server](https://github.com/getzep/graphiti)** `Official` `Python` — Temporal knowledge graphs for agent memory and context building.  
   `knowledge-graph` `memory` `temporal`
 - **[Hugging Face MCP Server](https://github.com/evalstate/hf-mcp-server)** `Python` — Access Hugging Face models, datasets, and Spaces from MCP clients.  
   `huggingface` `models` `ml`
-- **[LangGraph MCP Server](https://github.com/langchain-ai/langgraph-mcp)** `Python` — Orchestrate LangGraph agents and workflows through MCP.  
+- **[LangGraph MCP Server](https://github.com/langchain-ai/langgraph-mcp)** `Official` `Python` — Orchestrate LangGraph agents and workflows through MCP.  
   `agents` `orchestration` `langgraph`
-- **[LlamaIndex MCP Server](https://github.com/run-llama/llama_index)** `Python` — Data framework for LLM apps with MCP tool and agent connectors.  
+- **[LlamaIndex MCP Server](https://github.com/run-llama/llama_index)** `Official` `Python` — Data framework for LLM apps with MCP tool and agent connectors.  
   `rag` `indexing` `agents`
-- **[mem0 MCP Server](https://github.com/mem0ai/mem0-mcp)** `Python` — Persistent memory layer for personalized agent interactions.  
+- **[mem0 MCP Server](https://github.com/mem0ai/mem0-mcp)** `Official` `Python` — Persistent memory layer for personalized agent interactions.  
   `memory` `personalization` `agents`
 - **[Ollama MCP Bridge](https://github.com/jaspertvdm/mcp-server-ollama-bridge)** `Python` — Run local Llama, Mistral, and Qwen models via Ollama through MCP.  
   `ollama` `local-llm` `inference`
 - **[OpenAI MCP Bridge](https://github.com/jaspertvdm/mcp-server-openai-bridge)** `Python` — Bridge OpenAI GPT models into MCP-compatible agent workflows.  
   `openai` `gpt` `inference`
-- **[Zep MCP Server](https://github.com/jaysack/zep-mcp)** `Python` — Long-term memory and context retrieval for conversational agents.  
+- **[Zep MCP Server](https://github.com/jaysack/zep-mcp)** `Python` — Community MCP wrapper for long-term memory and context retrieval with Zep.  
   `memory` `context` `rag`
 
 <a id="data-analytics-and-bi"></a>
@@ -274,21 +274,21 @@ LLM bridges, agent orchestration, RAG, and persistent memory layers.
 
 Analytics platforms, monitoring, and business intelligence tooling.
 
-- **[Amplitude MCP Server](https://amplitude.com/docs/amplitude-ai/amplitude-mcp)** `TypeScript` — Analyze product analytics events and user behavior in Amplitude.  
+- **[Amplitude MCP Server](https://amplitude.com/docs/amplitude-ai/amplitude-mcp)** `Official` `TypeScript` — Analyze product analytics events and user behavior in Amplitude.  
   `product-analytics` `events` `bi`
-- **[Datadog MCP Server](https://github.com/datadog-labs/mcp-server)** `Python` — Query metrics, logs, and monitors from Datadog.  
+- **[Datadog MCP Server](https://github.com/datadog-labs/mcp-server)** `Official` `Python` — Query metrics, logs, and monitors from Datadog via the official Datadog Labs MCP server.  
   `datadog` `metrics` `logs`
-- **[dbt MCP Server](https://github.com/dbt-labs/dbt-mcp)** `Python` — Run dbt models, tests, and documentation workflows via MCP.  
+- **[dbt MCP Server](https://github.com/dbt-labs/dbt-mcp)** `Official` `Python` — Run dbt models, tests, and documentation workflows via MCP.  
   `dbt` `analytics` `transform`
-- **[Google GenAI Toolbox](https://github.com/googleapis/genai-toolbox)** `Go` — Connect agents to BigQuery, Cloud SQL, Spanner, and other Google data sources.  
+- **[Google GenAI Toolbox](https://github.com/googleapis/genai-toolbox)** `Official` `Go` — Connect agents to BigQuery, Cloud SQL, Spanner, and other Google data sources.  
   `bigquery` `gcp` `data`
-- **[Grafana MCP Server](https://github.com/grafana/mcp-grafana)** `Go` — Explore Grafana dashboards, alerts, and observability data.  
+- **[Grafana MCP Server](https://github.com/grafana/mcp-grafana)** `Official` `Go` — Explore Grafana dashboards, alerts, and observability data.  
   `monitoring` `dashboards` `observability`
-- **[Metabase MCP Server](https://www.metabase.com/docs/latest/ai/mcp)** `TypeScript` — Query dashboards and explore data in Metabase BI.  
+- **[Metabase MCP Server](https://www.metabase.com/docs/latest/ai/mcp)** `Official` `TypeScript` — Query dashboards and explore data in Metabase BI.  
   `bi` `dashboards` `sql`
-- **[Mixpanel MCP Server](https://docs.mixpanel.com/docs/mcp)** `TypeScript` — Query Mixpanel funnels, retention, and event analytics.  
+- **[Mixpanel MCP Server](https://docs.mixpanel.com/docs/mcp)** `Official` `TypeScript` — Query Mixpanel funnels, retention, and event analytics.  
   `analytics` `funnels` `product`
-- **[Netdata MCP Server](https://github.com/netdata/netdata)** `C` — Real-time infrastructure monitoring and health metrics via MCP.  
+- **[Netdata MCP Server](https://github.com/netdata/netdata)** `Official` `C` — Real-time infrastructure monitoring and health metrics via MCP.  
   `monitoring` `infra` `metrics`
 
 <a id="security-and-identity"></a>
@@ -297,17 +297,17 @@ Analytics platforms, monitoring, and business intelligence tooling.
 
 Secrets, vulnerability scanning, authentication, and security operations.
 
-- **[1Password MCP Server](https://github.com/CakeRepository/1Password-MCP)** `Go` — Securely access 1Password vault items for agent workflows.  
+- **[1Password MCP Server](https://github.com/CakeRepository/1Password-MCP)** `Go` — Community-maintained integration for accessing 1Password vault items in agent workflows.  
   `secrets` `passwords` `vault`
-- **[Auth0 MCP Server](https://github.com/auth0/auth0-mcp-server)** `TypeScript` — Manage Auth0 tenants, applications, and user identity settings.  
+- **[Auth0 MCP Server](https://github.com/auth0/auth0-mcp-server)** `Official` `TypeScript` — Manage Auth0 tenants, applications, and user identity settings.  
   `auth` `identity` `oauth`
-- **[CrowdStrike MCP Server](https://github.com/CrowdStrike/falcon-mcp)** `Python` — Query CrowdStrike Falcon detections and endpoint security data.  
+- **[CrowdStrike MCP Server](https://github.com/CrowdStrike/falcon-mcp)** `Official` `Python` — Query CrowdStrike Falcon detections and endpoint security data.  
   `endpoint` `security` `soc`
-- **[Snyk MCP Server](https://github.com/snyk/studio-mcp)** `TypeScript` — Scan dependencies and code for vulnerabilities with Snyk.  
+- **[Snyk MCP Server](https://github.com/snyk/studio-mcp)** `Official` `TypeScript` — Scan dependencies and code for vulnerabilities with Snyk.  
   `security` `vulnerabilities` `dependencies`
-- **[Vault MCP Server](https://github.com/hashicorp/vault-mcp-server)** `Go` — Read secrets and manage HashiCorp Vault policies via MCP.  
+- **[Vault MCP Server](https://github.com/hashicorp/vault-mcp-server)** `Official` `Go` — Read secrets and manage HashiCorp Vault policies via MCP.  
   `secrets` `vault` `security`
-- **[Wiz MCP Server](https://www.wiz.io/blog/introducing-mcp-server-for-wiz)** `TypeScript` — Cloud security posture management and risk insights from Wiz.  
+- **[Wiz MCP Server](https://www.wiz.io/blog/introducing-mcp-server-for-wiz)** `Official` `TypeScript` — Cloud security posture management and risk insights from Wiz.  
   `cloud-security` `cspm` `risk`
 
 <a id="finance-commerce-and-business-apps"></a>
@@ -316,21 +316,21 @@ Secrets, vulnerability scanning, authentication, and security operations.
 
 Payments, banking, CRM, e-commerce, and business system integrations.
 
-- **[HubSpot MCP Server](https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server)** `TypeScript` — Access HubSpot contacts, deals, and marketing automation data.  
+- **[HubSpot MCP Server](https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server)** `Official` `TypeScript` — Access HubSpot contacts, deals, and marketing automation data.  
   `crm` `marketing` `sales`
-- **[PayPal MCP Server](https://github.com/paypal/agent-toolkit)** `TypeScript` — Process PayPal payments and manage merchant operations.  
+- **[PayPal MCP Server](https://github.com/paypal/agent-toolkit)** `Official` `TypeScript` — Process PayPal payments and manage merchant operations.  
   `payments` `commerce` `fintech`
-- **[Plaid MCP Server](https://plaid.com/docs/resources/mcp/)** `TypeScript` — Connect bank accounts and retrieve financial transaction data.  
+- **[Plaid MCP Server](https://plaid.com/docs/resources/mcp/)** `Official` `TypeScript` — Connect bank accounts and retrieve financial transaction data.  
   `banking` `finance` `open-banking`
-- **[QuickBooks MCP Server](https://github.com/intuit/quickbooks-online-mcp-server)** `TypeScript` — Manage QuickBooks accounting records and financial reports.  
+- **[QuickBooks MCP Server](https://github.com/intuit/quickbooks-online-mcp-server)** `Official` `TypeScript` — Manage QuickBooks accounting records and financial reports.  
   `accounting` `finance` `bookkeeping`
-- **[Salesforce MCP Server](https://github.com/salesforcecli/mcp)** `TypeScript` — Query Salesforce CRM records and manage business workflows.  
+- **[Salesforce MCP Server](https://github.com/salesforcecli/mcp)** `Official` `TypeScript` — Query Salesforce CRM records and manage business workflows.  
   `crm` `sales` `enterprise`
-- **[Shopify MCP Server](https://github.com/GeLi2001/shopify-mcp)** `TypeScript` — Manage Shopify products, orders, and store operations.  
+- **[Shopify MCP Server](https://github.com/GeLi2001/shopify-mcp)** `TypeScript` — Community-maintained integration for Shopify products, orders, and store operations.  
   `ecommerce` `shopify` `retail`
-- **[Square MCP Server](https://github.com/square/square-mcp-server)** `TypeScript` — Process Square payments and manage point-of-sale operations.  
+- **[Square MCP Server](https://github.com/square/square-mcp-server)** `Official` `TypeScript` — Process Square payments and manage point-of-sale operations.  
   `payments` `pos` `commerce`
-- **[Stripe MCP Server](https://github.com/stripe/agent-toolkit)** `TypeScript` — Manage Stripe payments, customers, and subscriptions via MCP tools.  
+- **[Stripe MCP Server](https://github.com/stripe/agent-toolkit)** `Official` `TypeScript` — Manage Stripe payments, customers, and subscriptions via MCP tools.  
   `payments` `billing` `fintech`
 
 <a id="utilities-and-examples"></a>
@@ -353,7 +353,7 @@ Helpful utilities, templates, and starter servers for learning MCP.
   `templates` `multi-tool` `starter`
 - **[MCPJungle](https://github.com/duaraghav8/MCPJungle)** `Go` — Self-hosted MCP server registry for enterprise AI agent deployments.  
   `registry` `enterprise` `self-hosted`
-- **[MetaMCP](https://github.com/metatool-ai/metatool-app)** `TypeScript` — Middleware MCP server that aggregates and manages multiple connections.  
+- **[MetaMCP](https://github.com/metatool-ai/metatool-app)** `Official` `TypeScript` — Middleware MCP server that aggregates and manages multiple connections.  
   `aggregator` `gateway` `middleware`
 - **[Weather MCP Server](https://github.com/isdaniel/mcp_weather_server)** `Python` — Fetch current weather and forecasts from public weather APIs.  
   `weather` `api` `utility`

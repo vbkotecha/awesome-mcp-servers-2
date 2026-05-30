@@ -1,111 +1,1528 @@
 [
-  {"name": "MCP Everything", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/everything", "description": "Reference server exposing prompts, resources, and tools for protocol testing.", "category": "official-and-reference", "language": "TypeScript", "provider": "Model Context Protocol", "tags": ["reference", "testing", "official"], "official": true},
-  {"name": "MCP Fetch", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch", "description": "Fetch web content and convert HTML to markdown for LLM consumption.", "category": "official-and-reference", "language": "Python", "provider": "Model Context Protocol", "tags": ["reference", "web", "official"], "official": true},
-  {"name": "MCP Filesystem", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem", "description": "Secure local filesystem access with configurable allowed directories.", "category": "official-and-reference", "language": "TypeScript", "provider": "Model Context Protocol", "tags": ["reference", "filesystem", "official"], "official": true},
-  {"name": "MCP Git", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/git", "description": "Read, search, and manipulate Git repositories through MCP tools.", "category": "official-and-reference", "language": "Python", "provider": "Model Context Protocol", "tags": ["reference", "git", "official"], "official": true},
-  {"name": "MCP Memory", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory", "description": "Knowledge graph memory for persistent entities and relationships.", "category": "official-and-reference", "language": "TypeScript", "provider": "Model Context Protocol", "tags": ["reference", "memory", "official"], "official": true},
-  {"name": "MCP Sequential Thinking", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking", "description": "Structured step-by-step reasoning tool for complex problem solving.", "category": "official-and-reference", "language": "TypeScript", "provider": "Model Context Protocol", "tags": ["reference", "reasoning", "official"], "official": true},
-  {"name": "MCP Time", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/time", "description": "Time and timezone conversion utilities for agents and assistants.", "category": "official-and-reference", "language": "Python", "provider": "Model Context Protocol", "tags": ["reference", "time", "official"], "official": true},
-  {"name": "MCP Python SDK", "url": "https://github.com/modelcontextprotocol/python-sdk", "description": "Official Python SDK for building MCP servers and clients.", "category": "official-and-reference", "language": "Python", "provider": "Model Context Protocol", "tags": ["sdk", "python", "official"], "official": true},
-  {"name": "MCP TypeScript SDK", "url": "https://github.com/modelcontextprotocol/typescript-sdk", "description": "Official TypeScript SDK for building MCP servers and clients.", "category": "official-and-reference", "language": "TypeScript", "provider": "Model Context Protocol", "tags": ["sdk", "typescript", "official"], "official": true},
-  {"name": "MCP Registry", "url": "https://github.com/modelcontextprotocol/registry", "description": "Community-driven registry service and API for discovering MCP servers.", "category": "official-and-reference", "language": "Go", "provider": "Model Context Protocol", "tags": ["registry", "discovery", "official"], "official": true},
-  {"name": "MCP Inspector", "url": "https://github.com/modelcontextprotocol/inspector", "description": "Visual testing tool for debugging MCP server capabilities and messages.", "category": "official-and-reference", "language": "TypeScript", "provider": "Model Context Protocol", "tags": ["debugging", "testing", "official"], "official": true},
-  {"name": "DBHub", "url": "https://github.com/bytebase/dbhub", "description": "Universal database gateway supporting PostgreSQL, MySQL, SQL Server, SQLite, and MariaDB.", "category": "databases-and-storage", "language": "Go", "provider": "Bytebase", "tags": ["sql", "postgres", "mysql"]},
-  {"name": "Neon MCP Server", "url": "https://github.com/neondatabase/mcp-server-neon", "description": "Manage Neon Postgres databases, branches, and SQL queries via MCP.", "category": "databases-and-storage", "language": "TypeScript", "provider": "Neon", "tags": ["postgres", "serverless", "sql"]},
-  {"name": "Supabase MCP Server", "url": "https://github.com/supabase-community/supabase-mcp", "description": "Interact with Supabase projects, tables, and auth through MCP tools.", "category": "databases-and-storage", "language": "TypeScript", "provider": "Supabase", "tags": ["postgres", "backend", "sql"]},
-  {"name": "MongoDB MCP Server", "url": "https://github.com/mongodb-js/mongodb-mcp-server", "description": "Query and manage MongoDB databases and collections from AI clients.", "category": "databases-and-storage", "language": "TypeScript", "provider": "MongoDB", "tags": ["mongodb", "nosql", "documents"]},
-  {"name": "Redis MCP Server", "url": "https://github.com/redis/mcp-redis", "description": "Read and write Redis keys, lists, and data structures through MCP.", "category": "databases-and-storage", "language": "Python", "provider": "Redis", "tags": ["redis", "cache", "kv"]},
-  {"name": "Chroma MCP Server", "url": "https://github.com/chroma-core/chroma-mcp", "description": "Vector search and embedding storage with Chroma collections.", "category": "databases-and-storage", "language": "Python", "provider": "Chroma", "tags": ["vector", "embeddings", "rag"]},
-  {"name": "Pinecone MCP Server", "url": "https://github.com/pinecone-io/pinecone-mcp", "description": "Manage Pinecone indexes and run semantic vector queries.", "category": "databases-and-storage", "language": "TypeScript", "provider": "Pinecone", "tags": ["vector", "search", "rag"]},
-  {"name": "Qdrant MCP Server", "url": "https://github.com/qdrant/mcp-server-qdrant", "description": "Store and retrieve vectors in Qdrant for RAG workflows.", "category": "databases-and-storage", "language": "Python", "provider": "Qdrant", "tags": ["vector", "search", "rag"]},
-  {"name": "Elasticsearch MCP Server", "url": "https://github.com/elastic/mcp-server-elasticsearch", "description": "Search and analyze data in Elasticsearch clusters via MCP.", "category": "databases-and-storage", "language": "TypeScript", "provider": "Elastic", "tags": ["search", "analytics", "elastic"]},
-  {"name": "DuckDB MCP Server", "url": "https://github.com/motherduckdb/mcp-server-motherduck", "description": "Run analytical SQL queries against DuckDB databases and files.", "category": "databases-and-storage", "language": "Python", "provider": "DuckDB", "tags": ["analytics", "sql", "olap"]},
-  {"name": "Snowflake MCP Server", "url": "https://github.com/Snowflake-Labs/mcp", "description": "Query Snowflake warehouses and manage data platform resources.", "category": "databases-and-storage", "language": "Python", "provider": "Snowflake", "tags": ["warehouse", "sql", "analytics"]},
-  {"name": "PlanetScale MCP Server", "url": "https://planetscale.com/docs/connect/mcp", "description": "Manage PlanetScale MySQL databases, branches, and schema changes.", "category": "databases-and-storage", "language": "TypeScript", "provider": "PlanetScale", "tags": ["mysql", "serverless", "sql"]},
-  {"name": "SQLite MCP Server", "url": "https://github.com/ktanaka101/mcp-server-duckdb", "description": "Lightweight SQLite database access for local development workflows.", "category": "databases-and-storage", "language": "Python", "provider": "Community", "tags": ["sqlite", "local", "sql"]},
-  {"name": "GitHub MCP Server", "url": "https://github.com/github/github-mcp-server", "description": "Official GitHub integration for repos, issues, pull requests, and code search.", "category": "developer-tools-and-code-intelligence", "language": "Go", "provider": "GitHub", "tags": ["github", "git", "ci-cd"], "official": true},
-  {"name": "GitLab MCP Server", "url": "https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server/", "description": "GitLab Duo MCP server for merge requests, issues, and project management.", "category": "developer-tools-and-code-intelligence", "language": "Ruby", "provider": "GitLab", "tags": ["gitlab", "devops", "issues"]},
-  {"name": "Linear MCP Server", "url": "https://linear.app/docs/mcp", "description": "Create and manage Linear issues, projects, and team workflows.", "category": "developer-tools-and-code-intelligence", "language": "TypeScript", "provider": "Linear", "tags": ["issues", "project-management", "product"]},
-  {"name": "Sentry MCP Server", "url": "https://docs.sentry.io/product/sentry-mcp/", "description": "Investigate errors, releases, and performance issues in Sentry.", "category": "developer-tools-and-code-intelligence", "language": "TypeScript", "provider": "Sentry", "tags": ["observability", "errors", "monitoring"]},
-  {"name": "Docker MCP Server", "url": "https://github.com/docker/mcp-gateway", "description": "Manage containers, images, and Docker environments through MCP.", "category": "developer-tools-and-code-intelligence", "language": "Go", "provider": "Docker", "tags": ["containers", "devops", "docker"]},
-  {"name": "Kubernetes MCP Server", "url": "https://github.com/Flux159/mcp-server-kubernetes", "description": "Operate Kubernetes clusters with kubectl-style MCP tools.", "category": "developer-tools-and-code-intelligence", "language": "TypeScript", "provider": "Community", "tags": ["kubernetes", "devops", "cloud"]},
-  {"name": "Postman MCP Server", "url": "https://github.com/postmanlabs/postman-mcp-server", "description": "Explore and run Postman collections and API workflows from AI clients.", "category": "developer-tools-and-code-intelligence", "language": "TypeScript", "provider": "Postman", "tags": ["api", "testing", "http"]},
-  {"name": "Context7 MCP", "url": "https://github.com/upstash/context7", "description": "Up-to-date library and framework documentation injected into prompts.", "category": "developer-tools-and-code-intelligence", "language": "TypeScript", "provider": "Upstash", "tags": ["docs", "libraries", "coding"]},
-  {"name": "Semgrep MCP Server", "url": "https://github.com/semgrep/semgrep/tree/develop/cli/src/semgrep/mcp", "description": "Run static analysis and security scans on codebases via Semgrep.", "category": "developer-tools-and-code-intelligence", "language": "Python", "provider": "Semgrep", "tags": ["security", "sast", "code-quality"]},
-  {"name": "E2B MCP Server", "url": "https://github.com/e2b-dev/mcp-server", "description": "Execute code in secure cloud sandboxes for agentic coding workflows.", "category": "developer-tools-and-code-intelligence", "language": "TypeScript", "provider": "E2B", "tags": ["sandbox", "code-execution", "agents"]},
-  {"name": "Sourcegraph Cody MCP", "url": "https://sourcegraph.com/docs/api/mcp", "description": "Code intelligence and search across large codebases with Cody.", "category": "developer-tools-and-code-intelligence", "language": "TypeScript", "provider": "Sourcegraph", "tags": ["code-search", "ai", "enterprise"]},
-  {"name": "Playwright MCP", "url": "https://github.com/microsoft/playwright-mcp", "description": "Official Microsoft Playwright server for browser automation via accessibility snapshots.", "category": "browsers-search-and-web-automation", "language": "TypeScript", "provider": "Microsoft", "tags": ["browser", "playwright", "automation"], "official": true},
-  {"name": "Browserbase MCP Server", "url": "https://github.com/browserbase/mcp-server-browserbase", "description": "Cloud browser automation for navigation, scraping, and form filling.", "category": "browsers-search-and-web-automation", "language": "TypeScript", "provider": "Browserbase", "tags": ["browser", "cloud", "automation"]},
-  {"name": "Browser MCP", "url": "https://github.com/browsermcp/mcp", "description": "Automate a local Chrome browser from MCP-compatible AI clients.", "category": "browsers-search-and-web-automation", "language": "TypeScript", "provider": "Browser MCP", "tags": ["chrome", "local", "automation"]},
-  {"name": "Firecrawl MCP Server", "url": "https://github.com/mendableai/firecrawl-mcp-server", "description": "Scrape, crawl, and extract structured web data with Firecrawl.", "category": "browsers-search-and-web-automation", "language": "TypeScript", "provider": "Firecrawl", "tags": ["scraping", "crawl", "web"]},
-  {"name": "Exa MCP Server", "url": "https://github.com/exa-labs/exa-mcp-server", "description": "Neural and keyword web search optimized for AI research workflows.", "category": "browsers-search-and-web-automation", "language": "TypeScript", "provider": "Exa", "tags": ["search", "research", "web"]},
-  {"name": "Brave Search MCP Server", "url": "https://github.com/brave/brave-search-mcp-server", "description": "Privacy-focused web and local search through the Brave Search API.", "category": "browsers-search-and-web-automation", "language": "TypeScript", "provider": "Brave", "tags": ["search", "privacy", "web"]},
-  {"name": "Tavily MCP Server", "url": "https://github.com/tavily-ai/tavily-mcp", "description": "AI-native search and content extraction for research agents.", "category": "browsers-search-and-web-automation", "language": "Python", "provider": "Tavily", "tags": ["search", "research", "agents"]},
-  {"name": "Puppeteer MCP Server", "url": "https://github.com/merajmehrabi/puppeteer-mcp-server", "description": "Headless Chrome automation using Puppeteer for scraping and testing.", "category": "browsers-search-and-web-automation", "language": "TypeScript", "provider": "Community", "tags": ["puppeteer", "browser", "scraping"]},
-  {"name": "Chrome DevTools MCP", "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp", "description": "Control and inspect Chrome through DevTools protocol for debugging and automation.", "category": "browsers-search-and-web-automation", "language": "TypeScript", "provider": "Google", "tags": ["chrome", "devtools", "debugging"]},
-  {"name": "Apify MCP Server", "url": "https://github.com/apify/apify-mcp-server", "description": "Run Apify Actors and extract web datasets at scale.", "category": "browsers-search-and-web-automation", "language": "TypeScript", "provider": "Apify", "tags": ["scraping", "actors", "data"]},
-  {"name": "MarkItDown MCP", "url": "https://github.com/microsoft/markitdown", "description": "Convert PDFs, Office docs, and media into markdown for LLM ingestion.", "category": "filesystems-and-documents", "language": "Python", "provider": "Microsoft", "tags": ["documents", "conversion", "markdown"]},
-  {"name": "Notion MCP Server", "url": "https://github.com/makenotion/notion-mcp-server", "description": "Read and write Notion pages, databases, and workspace content.", "category": "filesystems-and-documents", "language": "TypeScript", "provider": "Notion", "tags": ["notion", "knowledge-base", "docs"]},
-  {"name": "Google Drive MCP Server", "url": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/gdrive", "description": "Access and search files in Google Drive from MCP clients.", "category": "filesystems-and-documents", "language": "Python", "provider": "Community", "tags": ["google-drive", "files", "cloud"]},
-  {"name": "Obsidian MCP Server", "url": "https://github.com/MarkusPfundstein/mcp-obsidian", "description": "Search and read notes from local Obsidian vaults.", "category": "filesystems-and-documents", "language": "TypeScript", "provider": "Community", "tags": ["obsidian", "notes", "local"]},
-  {"name": "PDF MCP Server", "url": "https://github.com/jztan/pdf-mcp", "description": "Extract text and metadata from PDF documents for analysis.", "category": "filesystems-and-documents", "language": "Python", "provider": "Community", "tags": ["pdf", "documents", "extraction"]},
-  {"name": "Readwise MCP Server", "url": "https://github.com/readwiseio/readwise-mcp", "description": "Search highlights and reading notes from Readwise.", "category": "filesystems-and-documents", "language": "TypeScript", "provider": "Readwise", "tags": ["highlights", "reading", "knowledge"]},
-  {"name": "Airtable MCP Server", "url": "https://github.com/domdomegg/airtable-mcp-server", "description": "Read and write Airtable bases, tables, and records via MCP.", "category": "filesystems-and-documents", "language": "TypeScript", "provider": "Community", "tags": ["airtable", "spreadsheets", "data"]},
-  {"name": "AWS MCP Server", "url": "https://github.com/alexei-led/aws-mcp-server", "description": "Execute AWS CLI commands safely in a containerized environment.", "category": "cloud-and-infrastructure", "language": "Python", "provider": "Community", "tags": ["aws", "cloud", "cli"]},
-  {"name": "Azure MCP Server", "url": "https://github.com/Azure/azure-mcp", "description": "Manage Azure resources and services through MCP tools.", "category": "cloud-and-infrastructure", "language": "TypeScript", "provider": "Microsoft", "tags": ["azure", "cloud", "infra"]},
-  {"name": "Cloudflare MCP Server", "url": "https://github.com/cloudflare/mcp-server-cloudflare", "description": "Manage Workers, KV, R2, and Cloudflare platform resources.", "category": "cloud-and-infrastructure", "language": "TypeScript", "provider": "Cloudflare", "tags": ["cloudflare", "edge", "workers"]},
-  {"name": "Terraform MCP Server", "url": "https://github.com/hashicorp/terraform-mcp-server", "description": "Generate and validate Terraform configurations with HashiCorp tooling.", "category": "cloud-and-infrastructure", "language": "Go", "provider": "HashiCorp", "tags": ["terraform", "iac", "infra"]},
-  {"name": "Vercel MCP Server", "url": "https://github.com/vercel/mcp-handler", "description": "Deploy and manage Vercel projects and deployments from AI clients.", "category": "cloud-and-infrastructure", "language": "TypeScript", "provider": "Vercel", "tags": ["vercel", "deploy", "frontend"]},
-  {"name": "Railway MCP Server", "url": "https://github.com/railwayapp/railway-mcp-server", "description": "Deploy services and manage Railway projects through MCP.", "category": "cloud-and-infrastructure", "language": "TypeScript", "provider": "Railway", "tags": ["railway", "deploy", "paas"]},
-  {"name": "Fly.io MCP Server", "url": "https://github.com/superfly/flymcp", "description": "Manage Fly.io apps, machines, and deployments via MCP.", "category": "cloud-and-infrastructure", "language": "TypeScript", "provider": "Fly.io", "tags": ["fly", "deploy", "edge"]},
-  {"name": "Port MCP Server", "url": "https://github.com/port-labs/port-mcp-server", "description": "Manage software catalog, scorecards, and actions in Port.io.", "category": "cloud-and-infrastructure", "language": "TypeScript", "provider": "Port", "tags": ["platform-engineering", "catalog", "devops"]},
-  {"name": "Pulumi MCP Server", "url": "https://www.pulumi.com/docs/ai/mcp-server/", "description": "Infrastructure as code operations with Pulumi stacks and resources.", "category": "cloud-and-infrastructure", "language": "TypeScript", "provider": "Pulumi", "tags": ["pulumi", "iac", "cloud"]},
-  {"name": "Slack MCP Server", "url": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/slack", "description": "Send messages and interact with Slack channels and workspaces.", "category": "communication-and-productivity", "language": "Python", "provider": "Community", "tags": ["slack", "chat", "team"]},
-  {"name": "Discord MCP Server", "url": "https://github.com/SaseQ/discord-mcp", "description": "Read and send messages in Discord servers and channels.", "category": "communication-and-productivity", "language": "Python", "provider": "Community", "tags": ["discord", "chat", "community"]},
-  {"name": "Gmail MCP Server", "url": "https://github.com/GongRzhe/Gmail-MCP-Server", "description": "Search, read, and compose Gmail messages from MCP clients.", "category": "communication-and-productivity", "language": "TypeScript", "provider": "Community", "tags": ["gmail", "email", "google"]},
-  {"name": "Google Calendar MCP Server", "url": "https://github.com/nspady/google-calendar-mcp", "description": "View and manage Google Calendar events and schedules.", "category": "communication-and-productivity", "language": "TypeScript", "provider": "Community", "tags": ["calendar", "scheduling", "google"]},
-  {"name": "Microsoft Teams MCP Server", "url": "https://github.com/InditexTech/mcp-teams-server", "description": "Interact with Microsoft Teams channels, messages, and meetings.", "category": "communication-and-productivity", "language": "TypeScript", "provider": "Community", "tags": ["teams", "chat", "microsoft"]},
-  {"name": "Atlassian MCP Server", "url": "https://github.com/atlassian/atlassian-mcp-server", "description": "Manage Jira issues and Confluence pages across Atlassian Cloud.", "category": "communication-and-productivity", "language": "TypeScript", "provider": "Atlassian", "tags": ["jira", "confluence", "atlassian"]},
-  {"name": "Todoist MCP Server", "url": "https://github.com/abhiz123/todoist-mcp-server", "description": "Manage Todoist tasks, projects, and due dates from AI assistants.", "category": "communication-and-productivity", "language": "TypeScript", "provider": "Community", "tags": ["tasks", "productivity", "todoist"]},
-  {"name": "Zoom MCP Server", "url": "https://github.com/zoom/mcp-registry", "description": "Schedule and manage Zoom meetings and recordings.", "category": "communication-and-productivity", "language": "TypeScript", "provider": "Zoom", "tags": ["zoom", "meetings", "video"]},
-  {"name": "mem0 MCP Server", "url": "https://github.com/mem0ai/mem0-mcp", "description": "Persistent memory layer for personalized agent interactions.", "category": "ai-agents-and-memory", "language": "Python", "provider": "mem0", "tags": ["memory", "personalization", "agents"]},
-  {"name": "Zep MCP Server", "url": "https://github.com/jaysack/zep-mcp", "description": "Long-term memory and context retrieval for conversational agents.", "category": "ai-agents-and-memory", "language": "Python", "provider": "Zep", "tags": ["memory", "context", "rag"]},
-  {"name": "LangGraph MCP Server", "url": "https://github.com/langchain-ai/langgraph-mcp", "description": "Orchestrate LangGraph agents and workflows through MCP.", "category": "ai-agents-and-memory", "language": "Python", "provider": "LangChain", "tags": ["agents", "orchestration", "langgraph"]},
-  {"name": "Ollama MCP Bridge", "url": "https://github.com/jaspertvdm/mcp-server-ollama-bridge", "description": "Run local Llama, Mistral, and Qwen models via Ollama through MCP.", "category": "ai-agents-and-memory", "language": "Python", "provider": "Community", "tags": ["ollama", "local-llm", "inference"]},
-  {"name": "Hugging Face MCP Server", "url": "https://github.com/evalstate/hf-mcp-server", "description": "Access Hugging Face models, datasets, and Spaces from MCP clients.", "category": "ai-agents-and-memory", "language": "Python", "provider": "Community", "tags": ["huggingface", "models", "ml"]},
-  {"name": "OpenAI MCP Bridge", "url": "https://github.com/jaspertvdm/mcp-server-openai-bridge", "description": "Bridge OpenAI GPT models into MCP-compatible agent workflows.", "category": "ai-agents-and-memory", "language": "Python", "provider": "Community", "tags": ["openai", "gpt", "inference"]},
-  {"name": "CrewAI MCP Server", "url": "https://github.com/crewAIInc/crewAI", "description": "Multi-agent orchestration framework with MCP integration support.", "category": "ai-agents-and-memory", "language": "Python", "provider": "CrewAI", "tags": ["agents", "multi-agent", "orchestration"]},
-  {"name": "LlamaIndex MCP Server", "url": "https://github.com/run-llama/llama_index", "description": "Data framework for LLM apps with MCP tool and agent connectors.", "category": "ai-agents-and-memory", "language": "Python", "provider": "LlamaIndex", "tags": ["rag", "indexing", "agents"]},
-  {"name": "Graphiti MCP Server", "url": "https://github.com/getzep/graphiti", "description": "Temporal knowledge graphs for agent memory and context building.", "category": "ai-agents-and-memory", "language": "Python", "provider": "Zep", "tags": ["knowledge-graph", "memory", "temporal"]},
-  {"name": "dbt MCP Server", "url": "https://github.com/dbt-labs/dbt-mcp", "description": "Run dbt models, tests, and documentation workflows via MCP.", "category": "data-analytics-and-bi", "language": "Python", "provider": "dbt Labs", "tags": ["dbt", "analytics", "transform"]},
-  {"name": "Metabase MCP Server", "url": "https://www.metabase.com/docs/latest/ai/mcp", "description": "Query dashboards and explore data in Metabase BI.", "category": "data-analytics-and-bi", "language": "TypeScript", "provider": "Metabase", "tags": ["bi", "dashboards", "sql"]},
-  {"name": "Grafana MCP Server", "url": "https://github.com/grafana/mcp-grafana", "description": "Explore Grafana dashboards, alerts, and observability data.", "category": "data-analytics-and-bi", "language": "Go", "provider": "Grafana", "tags": ["monitoring", "dashboards", "observability"]},
-  {"name": "Datadog MCP Server", "url": "https://github.com/datadog-labs/mcp-server", "description": "Query metrics, logs, and monitors from Datadog.", "category": "data-analytics-and-bi", "language": "Python", "provider": "Community", "tags": ["datadog", "metrics", "logs"]},
-  {"name": "Google GenAI Toolbox", "url": "https://github.com/googleapis/genai-toolbox", "description": "Connect agents to BigQuery, Cloud SQL, Spanner, and other Google data sources.", "category": "data-analytics-and-bi", "language": "Go", "provider": "Google", "tags": ["bigquery", "gcp", "data"]},
-  {"name": "Amplitude MCP Server", "url": "https://amplitude.com/docs/amplitude-ai/amplitude-mcp", "description": "Analyze product analytics events and user behavior in Amplitude.", "category": "data-analytics-and-bi", "language": "TypeScript", "provider": "Amplitude", "tags": ["product-analytics", "events", "bi"]},
-  {"name": "Mixpanel MCP Server", "url": "https://docs.mixpanel.com/docs/mcp", "description": "Query Mixpanel funnels, retention, and event analytics.", "category": "data-analytics-and-bi", "language": "TypeScript", "provider": "Mixpanel", "tags": ["analytics", "funnels", "product"]},
-  {"name": "Netdata MCP Server", "url": "https://github.com/netdata/netdata", "description": "Real-time infrastructure monitoring and health metrics via MCP.", "category": "data-analytics-and-bi", "language": "C", "provider": "Netdata", "tags": ["monitoring", "infra", "metrics"]},
-  {"name": "1Password MCP Server", "url": "https://github.com/CakeRepository/1Password-MCP", "description": "Securely access 1Password vault items for agent workflows.", "category": "security-and-identity", "language": "Go", "provider": "1Password", "tags": ["secrets", "passwords", "vault"]},
-  {"name": "Snyk MCP Server", "url": "https://github.com/snyk/studio-mcp", "description": "Scan dependencies and code for vulnerabilities with Snyk.", "category": "security-and-identity", "language": "TypeScript", "provider": "Snyk", "tags": ["security", "vulnerabilities", "dependencies"]},
-  {"name": "Auth0 MCP Server", "url": "https://github.com/auth0/auth0-mcp-server", "description": "Manage Auth0 tenants, applications, and user identity settings.", "category": "security-and-identity", "language": "TypeScript", "provider": "Auth0", "tags": ["auth", "identity", "oauth"]},
-  {"name": "Vault MCP Server", "url": "https://github.com/hashicorp/vault-mcp-server", "description": "Read secrets and manage HashiCorp Vault policies via MCP.", "category": "security-and-identity", "language": "Go", "provider": "HashiCorp", "tags": ["secrets", "vault", "security"]},
-  {"name": "CrowdStrike MCP Server", "url": "https://github.com/CrowdStrike/falcon-mcp", "description": "Query CrowdStrike Falcon detections and endpoint security data.", "category": "security-and-identity", "language": "Python", "provider": "CrowdStrike", "tags": ["endpoint", "security", "soc"]},
-  {"name": "Wiz MCP Server", "url": "https://www.wiz.io/blog/introducing-mcp-server-for-wiz", "description": "Cloud security posture management and risk insights from Wiz.", "category": "security-and-identity", "language": "TypeScript", "provider": "Wiz", "tags": ["cloud-security", "cspm", "risk"]},
-  {"name": "Stripe MCP Server", "url": "https://github.com/stripe/agent-toolkit", "description": "Manage Stripe payments, customers, and subscriptions via MCP tools.", "category": "finance-commerce-and-business-apps", "language": "TypeScript", "provider": "Stripe", "tags": ["payments", "billing", "fintech"]},
-  {"name": "PayPal MCP Server", "url": "https://github.com/paypal/agent-toolkit", "description": "Process PayPal payments and manage merchant operations.", "category": "finance-commerce-and-business-apps", "language": "TypeScript", "provider": "PayPal", "tags": ["payments", "commerce", "fintech"]},
-  {"name": "Plaid MCP Server", "url": "https://plaid.com/docs/resources/mcp/", "description": "Connect bank accounts and retrieve financial transaction data.", "category": "finance-commerce-and-business-apps", "language": "TypeScript", "provider": "Plaid", "tags": ["banking", "finance", "open-banking"]},
-  {"name": "Shopify MCP Server", "url": "https://github.com/GeLi2001/shopify-mcp", "description": "Manage Shopify products, orders, and store operations.", "category": "finance-commerce-and-business-apps", "language": "TypeScript", "provider": "Shopify", "tags": ["ecommerce", "shopify", "retail"]},
-  {"name": "Salesforce MCP Server", "url": "https://github.com/salesforcecli/mcp", "description": "Query Salesforce CRM records and manage business workflows.", "category": "finance-commerce-and-business-apps", "language": "TypeScript", "provider": "Salesforce", "tags": ["crm", "sales", "enterprise"]},
-  {"name": "HubSpot MCP Server", "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server", "description": "Access HubSpot contacts, deals, and marketing automation data.", "category": "finance-commerce-and-business-apps", "language": "TypeScript", "provider": "HubSpot", "tags": ["crm", "marketing", "sales"]},
-  {"name": "QuickBooks MCP Server", "url": "https://github.com/intuit/quickbooks-online-mcp-server", "description": "Manage QuickBooks accounting records and financial reports.", "category": "finance-commerce-and-business-apps", "language": "TypeScript", "provider": "Intuit", "tags": ["accounting", "finance", "bookkeeping"]},
-  {"name": "Square MCP Server", "url": "https://github.com/square/square-mcp-server", "description": "Process Square payments and manage point-of-sale operations.", "category": "finance-commerce-and-business-apps", "language": "TypeScript", "provider": "Square", "tags": ["payments", "pos", "commerce"]},
-  {"name": "Anyquery", "url": "https://github.com/julien040/anyquery", "description": "Query 40+ apps and databases with SQL from a single local binary.", "category": "utilities-and-examples", "language": "Go", "provider": "Community", "tags": ["sql", "integration", "local"]},
-  {"name": "FastMCP", "url": "https://github.com/jlowin/fastmcp", "description": "Python framework for building MCP servers quickly with decorators.", "category": "utilities-and-examples", "language": "Python", "provider": "Community", "tags": ["framework", "python", "starter"]},
-  {"name": "MCP Server Starter", "url": "https://github.com/modelcontextprotocol/create-typescript-server", "description": "Official TypeScript scaffold for creating new MCP servers.", "category": "utilities-and-examples", "language": "TypeScript", "provider": "Model Context Protocol", "tags": ["template", "typescript", "starter"], "official": true},
-  {"name": "Weather MCP Server", "url": "https://github.com/isdaniel/mcp_weather_server", "description": "Fetch current weather and forecasts from public weather APIs.", "category": "utilities-and-examples", "language": "Python", "provider": "Community", "tags": ["weather", "api", "utility"]},
-  {"name": "Google Maps MCP Server", "url": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/google-maps", "description": "Geocoding, directions, and place search via Google Maps.", "category": "utilities-and-examples", "language": "Python", "provider": "Community", "tags": ["maps", "location", "geo"]},
-  {"name": "A2ASearch MCP", "url": "https://github.com/tadas-github/a2asearch-mcp", "description": "Search thousands of MCP servers, agents, and CLI tools by capability.", "category": "utilities-and-examples", "language": "TypeScript", "provider": "Community", "tags": ["discovery", "search", "registry"]},
-  {"name": "MCP Server Templates", "url": "https://github.com/Data-Everything/mcp-server-templates", "description": "Unified MCP platform connecting many apps behind one interface.", "category": "utilities-and-examples", "language": "TypeScript", "provider": "Community", "tags": ["templates", "multi-tool", "starter"]},
-  {"name": "MetaMCP", "url": "https://github.com/metatool-ai/metatool-app", "description": "Middleware MCP server that aggregates and manages multiple connections.", "category": "utilities-and-examples", "language": "TypeScript", "provider": "MetaTool", "tags": ["aggregator", "gateway", "middleware"]},
-  {"name": "MCPJungle", "url": "https://github.com/duaraghav8/MCPJungle", "description": "Self-hosted MCP server registry for enterprise AI agent deployments.", "category": "utilities-and-examples", "language": "Go", "provider": "Community", "tags": ["registry", "enterprise", "self-hosted"]}
+  {
+    "name": "MCP Everything",
+    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/everything",
+    "description": "Reference server exposing prompts, resources, and tools for protocol testing.",
+    "category": "official-and-reference",
+    "language": "TypeScript",
+    "provider": "Model Context Protocol",
+    "tags": [
+      "reference",
+      "testing",
+      "official"
+    ],
+    "official": true
+  },
+  {
+    "name": "MCP Fetch",
+    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+    "description": "Fetch web content and convert HTML to markdown for LLM consumption.",
+    "category": "official-and-reference",
+    "language": "Python",
+    "provider": "Model Context Protocol",
+    "tags": [
+      "reference",
+      "web",
+      "official"
+    ],
+    "official": true
+  },
+  {
+    "name": "MCP Filesystem",
+    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+    "description": "Secure local filesystem access with configurable allowed directories.",
+    "category": "official-and-reference",
+    "language": "TypeScript",
+    "provider": "Model Context Protocol",
+    "tags": [
+      "reference",
+      "filesystem",
+      "official"
+    ],
+    "official": true
+  },
+  {
+    "name": "MCP Git",
+    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
+    "description": "Read, search, and manipulate Git repositories through MCP tools.",
+    "category": "official-and-reference",
+    "language": "Python",
+    "provider": "Model Context Protocol",
+    "tags": [
+      "reference",
+      "git",
+      "official"
+    ],
+    "official": true
+  },
+  {
+    "name": "MCP Memory",
+    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+    "description": "Knowledge graph memory for persistent entities and relationships.",
+    "category": "official-and-reference",
+    "language": "TypeScript",
+    "provider": "Model Context Protocol",
+    "tags": [
+      "reference",
+      "memory",
+      "official"
+    ],
+    "official": true
+  },
+  {
+    "name": "MCP Sequential Thinking",
+    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
+    "description": "Structured step-by-step reasoning tool for complex problem solving.",
+    "category": "official-and-reference",
+    "language": "TypeScript",
+    "provider": "Model Context Protocol",
+    "tags": [
+      "reference",
+      "reasoning",
+      "official"
+    ],
+    "official": true
+  },
+  {
+    "name": "MCP Time",
+    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/time",
+    "description": "Time and timezone conversion utilities for agents and assistants.",
+    "category": "official-and-reference",
+    "language": "Python",
+    "provider": "Model Context Protocol",
+    "tags": [
+      "reference",
+      "time",
+      "official"
+    ],
+    "official": true
+  },
+  {
+    "name": "MCP Python SDK",
+    "url": "https://github.com/modelcontextprotocol/python-sdk",
+    "description": "Official Python SDK for building MCP servers and clients.",
+    "category": "official-and-reference",
+    "language": "Python",
+    "provider": "Model Context Protocol",
+    "tags": [
+      "sdk",
+      "python",
+      "official"
+    ],
+    "official": true
+  },
+  {
+    "name": "MCP TypeScript SDK",
+    "url": "https://github.com/modelcontextprotocol/typescript-sdk",
+    "description": "Official TypeScript SDK for building MCP servers and clients.",
+    "category": "official-and-reference",
+    "language": "TypeScript",
+    "provider": "Model Context Protocol",
+    "tags": [
+      "sdk",
+      "typescript",
+      "official"
+    ],
+    "official": true
+  },
+  {
+    "name": "MCP Registry",
+    "url": "https://github.com/modelcontextprotocol/registry",
+    "description": "Official MCP registry service and API for discovering publicly available MCP servers.",
+    "category": "official-and-reference",
+    "language": "Go",
+    "provider": "Model Context Protocol",
+    "tags": [
+      "registry",
+      "discovery",
+      "official"
+    ],
+    "official": true
+  },
+  {
+    "name": "MCP Inspector",
+    "url": "https://github.com/modelcontextprotocol/inspector",
+    "description": "Visual testing tool for debugging MCP server capabilities and messages.",
+    "category": "official-and-reference",
+    "language": "TypeScript",
+    "provider": "Model Context Protocol",
+    "tags": [
+      "debugging",
+      "testing",
+      "official"
+    ],
+    "official": true
+  },
+  {
+    "name": "DBHub",
+    "url": "https://github.com/bytebase/dbhub",
+    "description": "Universal database gateway supporting PostgreSQL, MySQL, SQL Server, SQLite, and MariaDB.",
+    "category": "databases-and-storage",
+    "language": "Go",
+    "provider": "Bytebase",
+    "tags": [
+      "sql",
+      "postgres",
+      "mysql"
+    ],
+    "official": true
+  },
+  {
+    "name": "Neon MCP Server",
+    "url": "https://github.com/neondatabase/mcp-server-neon",
+    "description": "Manage Neon Postgres databases, branches, and SQL queries via MCP.",
+    "category": "databases-and-storage",
+    "language": "TypeScript",
+    "provider": "Neon",
+    "tags": [
+      "postgres",
+      "serverless",
+      "sql"
+    ],
+    "official": true
+  },
+  {
+    "name": "Supabase MCP Server",
+    "url": "https://github.com/supabase-community/supabase-mcp",
+    "description": "Community-maintained integration for Supabase projects, tables, and auth through MCP tools.",
+    "category": "databases-and-storage",
+    "language": "TypeScript",
+    "provider": "Community",
+    "tags": [
+      "postgres",
+      "backend",
+      "sql"
+    ],
+    "official": false
+  },
+  {
+    "name": "MongoDB MCP Server",
+    "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+    "description": "Query and manage MongoDB databases and collections from AI clients.",
+    "category": "databases-and-storage",
+    "language": "TypeScript",
+    "provider": "MongoDB",
+    "tags": [
+      "mongodb",
+      "nosql",
+      "documents"
+    ],
+    "official": true
+  },
+  {
+    "name": "Redis MCP Server",
+    "url": "https://github.com/redis/mcp-redis",
+    "description": "Read and write Redis keys, lists, and data structures through MCP.",
+    "category": "databases-and-storage",
+    "language": "Python",
+    "provider": "Redis",
+    "tags": [
+      "redis",
+      "cache",
+      "kv"
+    ],
+    "official": true
+  },
+  {
+    "name": "Chroma MCP Server",
+    "url": "https://github.com/chroma-core/chroma-mcp",
+    "description": "Vector search and embedding storage with Chroma collections.",
+    "category": "databases-and-storage",
+    "language": "Python",
+    "provider": "Chroma",
+    "tags": [
+      "vector",
+      "embeddings",
+      "rag"
+    ],
+    "official": true
+  },
+  {
+    "name": "Pinecone MCP Server",
+    "url": "https://github.com/pinecone-io/pinecone-mcp",
+    "description": "Manage Pinecone indexes and run semantic vector queries.",
+    "category": "databases-and-storage",
+    "language": "TypeScript",
+    "provider": "Pinecone",
+    "tags": [
+      "vector",
+      "search",
+      "rag"
+    ],
+    "official": true
+  },
+  {
+    "name": "Qdrant MCP Server",
+    "url": "https://github.com/qdrant/mcp-server-qdrant",
+    "description": "Store and retrieve vectors in Qdrant for RAG workflows.",
+    "category": "databases-and-storage",
+    "language": "Python",
+    "provider": "Qdrant",
+    "tags": [
+      "vector",
+      "search",
+      "rag"
+    ],
+    "official": true
+  },
+  {
+    "name": "Elasticsearch MCP Server",
+    "url": "https://github.com/elastic/mcp-server-elasticsearch",
+    "description": "Search and analyze data in Elasticsearch clusters via MCP.",
+    "category": "databases-and-storage",
+    "language": "TypeScript",
+    "provider": "Elastic",
+    "tags": [
+      "search",
+      "analytics",
+      "elastic"
+    ],
+    "official": true
+  },
+  {
+    "name": "DuckDB MCP Server",
+    "url": "https://github.com/motherduckdb/mcp-server-motherduck",
+    "description": "Run analytical SQL queries against DuckDB databases and files.",
+    "category": "databases-and-storage",
+    "language": "Python",
+    "provider": "DuckDB",
+    "tags": [
+      "analytics",
+      "sql",
+      "olap"
+    ],
+    "official": true
+  },
+  {
+    "name": "Snowflake MCP Server",
+    "url": "https://github.com/Snowflake-Labs/mcp",
+    "description": "Query Snowflake warehouses and manage data platform resources.",
+    "category": "databases-and-storage",
+    "language": "Python",
+    "provider": "Snowflake",
+    "tags": [
+      "warehouse",
+      "sql",
+      "analytics"
+    ],
+    "official": true
+  },
+  {
+    "name": "PlanetScale MCP Server",
+    "url": "https://planetscale.com/docs/connect/mcp",
+    "description": "Manage PlanetScale MySQL databases, branches, and schema changes.",
+    "category": "databases-and-storage",
+    "language": "TypeScript",
+    "provider": "PlanetScale",
+    "tags": [
+      "mysql",
+      "serverless",
+      "sql"
+    ],
+    "official": true
+  },
+  {
+    "name": "SQLite MCP Server",
+    "url": "https://github.com/ktanaka101/mcp-server-duckdb",
+    "description": "Lightweight SQLite database access for local development workflows.",
+    "category": "databases-and-storage",
+    "language": "Python",
+    "provider": "Community",
+    "tags": [
+      "sqlite",
+      "local",
+      "sql"
+    ],
+    "official": false
+  },
+  {
+    "name": "GitHub MCP Server",
+    "url": "https://github.com/github/github-mcp-server",
+    "description": "Official GitHub integration for repos, issues, pull requests, and code search.",
+    "category": "developer-tools-and-code-intelligence",
+    "language": "Go",
+    "provider": "GitHub",
+    "tags": [
+      "github",
+      "git",
+      "ci-cd"
+    ],
+    "official": true
+  },
+  {
+    "name": "GitLab MCP Server",
+    "url": "https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server/",
+    "description": "GitLab Duo MCP server for merge requests, issues, and project management.",
+    "category": "developer-tools-and-code-intelligence",
+    "language": "Ruby",
+    "provider": "GitLab",
+    "tags": [
+      "gitlab",
+      "devops",
+      "issues"
+    ],
+    "official": true
+  },
+  {
+    "name": "Linear MCP Server",
+    "url": "https://linear.app/docs/mcp",
+    "description": "Create and manage Linear issues, projects, and team workflows.",
+    "category": "developer-tools-and-code-intelligence",
+    "language": "TypeScript",
+    "provider": "Linear",
+    "tags": [
+      "issues",
+      "project-management",
+      "product"
+    ],
+    "official": true
+  },
+  {
+    "name": "Sentry MCP Server",
+    "url": "https://docs.sentry.io/product/sentry-mcp/",
+    "description": "Investigate errors, releases, and performance issues in Sentry.",
+    "category": "developer-tools-and-code-intelligence",
+    "language": "TypeScript",
+    "provider": "Sentry",
+    "tags": [
+      "observability",
+      "errors",
+      "monitoring"
+    ],
+    "official": true
+  },
+  {
+    "name": "Docker MCP Server",
+    "url": "https://github.com/docker/mcp-gateway",
+    "description": "Manage containers, images, and Docker environments through MCP.",
+    "category": "developer-tools-and-code-intelligence",
+    "language": "Go",
+    "provider": "Docker",
+    "tags": [
+      "containers",
+      "devops",
+      "docker"
+    ],
+    "official": true
+  },
+  {
+    "name": "Kubernetes MCP Server",
+    "url": "https://github.com/Flux159/mcp-server-kubernetes",
+    "description": "Operate Kubernetes clusters with kubectl-style MCP tools.",
+    "category": "developer-tools-and-code-intelligence",
+    "language": "TypeScript",
+    "provider": "Community",
+    "tags": [
+      "kubernetes",
+      "devops",
+      "cloud"
+    ],
+    "official": false
+  },
+  {
+    "name": "Postman MCP Server",
+    "url": "https://github.com/postmanlabs/postman-mcp-server",
+    "description": "Explore and run Postman collections and API workflows from AI clients.",
+    "category": "developer-tools-and-code-intelligence",
+    "language": "TypeScript",
+    "provider": "Postman",
+    "tags": [
+      "api",
+      "testing",
+      "http"
+    ],
+    "official": true
+  },
+  {
+    "name": "Context7 MCP",
+    "url": "https://github.com/upstash/context7",
+    "description": "Up-to-date library and framework documentation injected into prompts.",
+    "category": "developer-tools-and-code-intelligence",
+    "language": "TypeScript",
+    "provider": "Upstash",
+    "tags": [
+      "docs",
+      "libraries",
+      "coding"
+    ],
+    "official": true
+  },
+  {
+    "name": "Semgrep MCP Server",
+    "url": "https://github.com/semgrep/semgrep/tree/develop/cli/src/semgrep/mcp",
+    "description": "Run static analysis and security scans on codebases via Semgrep.",
+    "category": "developer-tools-and-code-intelligence",
+    "language": "Python",
+    "provider": "Semgrep",
+    "tags": [
+      "security",
+      "sast",
+      "code-quality"
+    ],
+    "official": true
+  },
+  {
+    "name": "E2B MCP Server",
+    "url": "https://github.com/e2b-dev/mcp-server",
+    "description": "Execute code in secure cloud sandboxes for agentic coding workflows.",
+    "category": "developer-tools-and-code-intelligence",
+    "language": "TypeScript",
+    "provider": "E2B",
+    "tags": [
+      "sandbox",
+      "code-execution",
+      "agents"
+    ],
+    "official": true
+  },
+  {
+    "name": "Sourcegraph Cody MCP",
+    "url": "https://sourcegraph.com/docs/api/mcp",
+    "description": "Code intelligence and search across large codebases with Cody.",
+    "category": "developer-tools-and-code-intelligence",
+    "language": "TypeScript",
+    "provider": "Sourcegraph",
+    "tags": [
+      "code-search",
+      "ai",
+      "enterprise"
+    ],
+    "official": true
+  },
+  {
+    "name": "Playwright MCP",
+    "url": "https://github.com/microsoft/playwright-mcp",
+    "description": "Official Microsoft Playwright server for browser automation via accessibility snapshots.",
+    "category": "browsers-search-and-web-automation",
+    "language": "TypeScript",
+    "provider": "Microsoft",
+    "tags": [
+      "browser",
+      "playwright",
+      "automation"
+    ],
+    "official": true
+  },
+  {
+    "name": "Browserbase MCP Server",
+    "url": "https://github.com/browserbase/mcp-server-browserbase",
+    "description": "Cloud browser automation for navigation, scraping, and form filling.",
+    "category": "browsers-search-and-web-automation",
+    "language": "TypeScript",
+    "provider": "Browserbase",
+    "tags": [
+      "browser",
+      "cloud",
+      "automation"
+    ],
+    "official": true
+  },
+  {
+    "name": "Browser MCP",
+    "url": "https://github.com/browsermcp/mcp",
+    "description": "Automate a local Chrome browser from MCP-compatible AI clients.",
+    "category": "browsers-search-and-web-automation",
+    "language": "TypeScript",
+    "provider": "Browser MCP",
+    "tags": [
+      "chrome",
+      "local",
+      "automation"
+    ],
+    "official": true
+  },
+  {
+    "name": "Firecrawl MCP Server",
+    "url": "https://github.com/mendableai/firecrawl-mcp-server",
+    "description": "Scrape, crawl, and extract structured web data with Firecrawl.",
+    "category": "browsers-search-and-web-automation",
+    "language": "TypeScript",
+    "provider": "Firecrawl",
+    "tags": [
+      "scraping",
+      "crawl",
+      "web"
+    ],
+    "official": true
+  },
+  {
+    "name": "Exa MCP Server",
+    "url": "https://github.com/exa-labs/exa-mcp-server",
+    "description": "Neural and keyword web search optimized for AI research workflows.",
+    "category": "browsers-search-and-web-automation",
+    "language": "TypeScript",
+    "provider": "Exa",
+    "tags": [
+      "search",
+      "research",
+      "web"
+    ],
+    "official": true
+  },
+  {
+    "name": "Brave Search MCP Server",
+    "url": "https://github.com/brave/brave-search-mcp-server",
+    "description": "Privacy-focused web and local search through the Brave Search API.",
+    "category": "browsers-search-and-web-automation",
+    "language": "TypeScript",
+    "provider": "Brave",
+    "tags": [
+      "search",
+      "privacy",
+      "web"
+    ],
+    "official": true
+  },
+  {
+    "name": "Tavily MCP Server",
+    "url": "https://github.com/tavily-ai/tavily-mcp",
+    "description": "AI-native search and content extraction for research agents.",
+    "category": "browsers-search-and-web-automation",
+    "language": "Python",
+    "provider": "Tavily",
+    "tags": [
+      "search",
+      "research",
+      "agents"
+    ],
+    "official": true
+  },
+  {
+    "name": "Puppeteer MCP Server",
+    "url": "https://github.com/merajmehrabi/puppeteer-mcp-server",
+    "description": "Headless Chrome automation using Puppeteer for scraping and testing.",
+    "category": "browsers-search-and-web-automation",
+    "language": "TypeScript",
+    "provider": "Community",
+    "tags": [
+      "puppeteer",
+      "browser",
+      "scraping"
+    ],
+    "official": false
+  },
+  {
+    "name": "Chrome DevTools MCP",
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "description": "Control and inspect Chrome through DevTools protocol for debugging and automation.",
+    "category": "browsers-search-and-web-automation",
+    "language": "TypeScript",
+    "provider": "Google",
+    "tags": [
+      "chrome",
+      "devtools",
+      "debugging"
+    ],
+    "official": true
+  },
+  {
+    "name": "Apify MCP Server",
+    "url": "https://github.com/apify/apify-mcp-server",
+    "description": "Run Apify Actors and extract web datasets at scale.",
+    "category": "browsers-search-and-web-automation",
+    "language": "TypeScript",
+    "provider": "Apify",
+    "tags": [
+      "scraping",
+      "actors",
+      "data"
+    ],
+    "official": true
+  },
+  {
+    "name": "MarkItDown MCP",
+    "url": "https://github.com/microsoft/markitdown",
+    "description": "Convert PDFs, Office docs, and media into markdown for LLM ingestion.",
+    "category": "filesystems-and-documents",
+    "language": "Python",
+    "provider": "Microsoft",
+    "tags": [
+      "documents",
+      "conversion",
+      "markdown"
+    ],
+    "official": true
+  },
+  {
+    "name": "Notion MCP Server",
+    "url": "https://github.com/makenotion/notion-mcp-server",
+    "description": "Read and write Notion pages, databases, and workspace content.",
+    "category": "filesystems-and-documents",
+    "language": "TypeScript",
+    "provider": "Notion",
+    "tags": [
+      "notion",
+      "knowledge-base",
+      "docs"
+    ],
+    "official": true
+  },
+  {
+    "name": "Google Drive MCP Server",
+    "url": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/gdrive",
+    "description": "Access and search files in Google Drive from MCP clients.",
+    "category": "filesystems-and-documents",
+    "language": "Python",
+    "provider": "Community",
+    "tags": [
+      "google-drive",
+      "files",
+      "cloud"
+    ],
+    "official": false
+  },
+  {
+    "name": "Obsidian MCP Server",
+    "url": "https://github.com/MarkusPfundstein/mcp-obsidian",
+    "description": "Search and read notes from local Obsidian vaults.",
+    "category": "filesystems-and-documents",
+    "language": "TypeScript",
+    "provider": "Community",
+    "tags": [
+      "obsidian",
+      "notes",
+      "local"
+    ],
+    "official": false
+  },
+  {
+    "name": "PDF MCP Server",
+    "url": "https://github.com/jztan/pdf-mcp",
+    "description": "Extract text and metadata from PDF documents for analysis.",
+    "category": "filesystems-and-documents",
+    "language": "Python",
+    "provider": "Community",
+    "tags": [
+      "pdf",
+      "documents",
+      "extraction"
+    ],
+    "official": false
+  },
+  {
+    "name": "Readwise MCP Server",
+    "url": "https://github.com/readwiseio/readwise-mcp",
+    "description": "Search highlights and reading notes from Readwise.",
+    "category": "filesystems-and-documents",
+    "language": "TypeScript",
+    "provider": "Readwise",
+    "tags": [
+      "highlights",
+      "reading",
+      "knowledge"
+    ],
+    "official": true
+  },
+  {
+    "name": "Airtable MCP Server",
+    "url": "https://github.com/domdomegg/airtable-mcp-server",
+    "description": "Read and write Airtable bases, tables, and records via MCP.",
+    "category": "filesystems-and-documents",
+    "language": "TypeScript",
+    "provider": "Community",
+    "tags": [
+      "airtable",
+      "spreadsheets",
+      "data"
+    ],
+    "official": false
+  },
+  {
+    "name": "AWS MCP Server",
+    "url": "https://github.com/alexei-led/aws-mcp-server",
+    "description": "Execute AWS CLI commands safely in a containerized environment.",
+    "category": "cloud-and-infrastructure",
+    "language": "Python",
+    "provider": "Community",
+    "tags": [
+      "aws",
+      "cloud",
+      "cli"
+    ],
+    "official": false
+  },
+  {
+    "name": "Azure MCP Server",
+    "url": "https://github.com/Azure/azure-mcp",
+    "description": "Manage Azure resources and services through MCP tools.",
+    "category": "cloud-and-infrastructure",
+    "language": "TypeScript",
+    "provider": "Microsoft",
+    "tags": [
+      "azure",
+      "cloud",
+      "infra"
+    ],
+    "official": true
+  },
+  {
+    "name": "Cloudflare MCP Server",
+    "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+    "description": "Manage Workers, KV, R2, and Cloudflare platform resources.",
+    "category": "cloud-and-infrastructure",
+    "language": "TypeScript",
+    "provider": "Cloudflare",
+    "tags": [
+      "cloudflare",
+      "edge",
+      "workers"
+    ],
+    "official": true
+  },
+  {
+    "name": "Terraform MCP Server",
+    "url": "https://github.com/hashicorp/terraform-mcp-server",
+    "description": "Generate and validate Terraform configurations with HashiCorp tooling.",
+    "category": "cloud-and-infrastructure",
+    "language": "Go",
+    "provider": "HashiCorp",
+    "tags": [
+      "terraform",
+      "iac",
+      "infra"
+    ],
+    "official": true
+  },
+  {
+    "name": "Vercel MCP Server",
+    "url": "https://github.com/vercel/mcp-handler",
+    "description": "Deploy and manage Vercel projects and deployments from AI clients.",
+    "category": "cloud-and-infrastructure",
+    "language": "TypeScript",
+    "provider": "Vercel",
+    "tags": [
+      "vercel",
+      "deploy",
+      "frontend"
+    ],
+    "official": true
+  },
+  {
+    "name": "Railway MCP Server",
+    "url": "https://github.com/railwayapp/railway-mcp-server",
+    "description": "Deploy services and manage Railway projects through MCP.",
+    "category": "cloud-and-infrastructure",
+    "language": "TypeScript",
+    "provider": "Railway",
+    "tags": [
+      "railway",
+      "deploy",
+      "paas"
+    ],
+    "official": true
+  },
+  {
+    "name": "Fly.io MCP Server",
+    "url": "https://github.com/superfly/flymcp",
+    "description": "Manage Fly.io apps, machines, and deployments via MCP.",
+    "category": "cloud-and-infrastructure",
+    "language": "TypeScript",
+    "provider": "Fly.io",
+    "tags": [
+      "fly",
+      "deploy",
+      "edge"
+    ],
+    "official": true
+  },
+  {
+    "name": "Port MCP Server",
+    "url": "https://github.com/port-labs/port-mcp-server",
+    "description": "Manage software catalog, scorecards, and actions in Port.io.",
+    "category": "cloud-and-infrastructure",
+    "language": "TypeScript",
+    "provider": "Port",
+    "tags": [
+      "platform-engineering",
+      "catalog",
+      "devops"
+    ],
+    "official": true
+  },
+  {
+    "name": "Pulumi MCP Server",
+    "url": "https://www.pulumi.com/docs/ai/mcp-server/",
+    "description": "Infrastructure as code operations with Pulumi stacks and resources.",
+    "category": "cloud-and-infrastructure",
+    "language": "TypeScript",
+    "provider": "Pulumi",
+    "tags": [
+      "pulumi",
+      "iac",
+      "cloud"
+    ],
+    "official": true
+  },
+  {
+    "name": "Slack MCP Server",
+    "url": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/slack",
+    "description": "Send messages and interact with Slack channels and workspaces.",
+    "category": "communication-and-productivity",
+    "language": "Python",
+    "provider": "Community",
+    "tags": [
+      "slack",
+      "chat",
+      "team"
+    ],
+    "official": false
+  },
+  {
+    "name": "Discord MCP Server",
+    "url": "https://github.com/SaseQ/discord-mcp",
+    "description": "Read and send messages in Discord servers and channels.",
+    "category": "communication-and-productivity",
+    "language": "Python",
+    "provider": "Community",
+    "tags": [
+      "discord",
+      "chat",
+      "community"
+    ],
+    "official": false
+  },
+  {
+    "name": "Gmail MCP Server",
+    "url": "https://github.com/GongRzhe/Gmail-MCP-Server",
+    "description": "Search, read, and compose Gmail messages from MCP clients.",
+    "category": "communication-and-productivity",
+    "language": "TypeScript",
+    "provider": "Community",
+    "tags": [
+      "gmail",
+      "email",
+      "google"
+    ],
+    "official": false
+  },
+  {
+    "name": "Google Calendar MCP Server",
+    "url": "https://github.com/nspady/google-calendar-mcp",
+    "description": "View and manage Google Calendar events and schedules.",
+    "category": "communication-and-productivity",
+    "language": "TypeScript",
+    "provider": "Community",
+    "tags": [
+      "calendar",
+      "scheduling",
+      "google"
+    ],
+    "official": false
+  },
+  {
+    "name": "Microsoft Teams MCP Server",
+    "url": "https://github.com/InditexTech/mcp-teams-server",
+    "description": "Interact with Microsoft Teams channels, messages, and meetings.",
+    "category": "communication-and-productivity",
+    "language": "TypeScript",
+    "provider": "Community",
+    "tags": [
+      "teams",
+      "chat",
+      "microsoft"
+    ],
+    "official": false
+  },
+  {
+    "name": "Atlassian MCP Server",
+    "url": "https://github.com/atlassian/atlassian-mcp-server",
+    "description": "Manage Jira issues and Confluence pages across Atlassian Cloud.",
+    "category": "communication-and-productivity",
+    "language": "TypeScript",
+    "provider": "Atlassian",
+    "tags": [
+      "jira",
+      "confluence",
+      "atlassian"
+    ],
+    "official": true
+  },
+  {
+    "name": "Todoist MCP Server",
+    "url": "https://github.com/abhiz123/todoist-mcp-server",
+    "description": "Manage Todoist tasks, projects, and due dates from AI assistants.",
+    "category": "communication-and-productivity",
+    "language": "TypeScript",
+    "provider": "Community",
+    "tags": [
+      "tasks",
+      "productivity",
+      "todoist"
+    ],
+    "official": false
+  },
+  {
+    "name": "Zoom MCP Server",
+    "url": "https://github.com/zoom/mcp-registry",
+    "description": "Schedule and manage Zoom meetings and recordings.",
+    "category": "communication-and-productivity",
+    "language": "TypeScript",
+    "provider": "Zoom",
+    "tags": [
+      "zoom",
+      "meetings",
+      "video"
+    ],
+    "official": true
+  },
+  {
+    "name": "mem0 MCP Server",
+    "url": "https://github.com/mem0ai/mem0-mcp",
+    "description": "Persistent memory layer for personalized agent interactions.",
+    "category": "ai-agents-and-memory",
+    "language": "Python",
+    "provider": "mem0",
+    "tags": [
+      "memory",
+      "personalization",
+      "agents"
+    ],
+    "official": true
+  },
+  {
+    "name": "Zep MCP Server",
+    "url": "https://github.com/jaysack/zep-mcp",
+    "description": "Community MCP wrapper for long-term memory and context retrieval with Zep.",
+    "category": "ai-agents-and-memory",
+    "language": "Python",
+    "provider": "Community",
+    "tags": [
+      "memory",
+      "context",
+      "rag"
+    ],
+    "official": false
+  },
+  {
+    "name": "LangGraph MCP Server",
+    "url": "https://github.com/langchain-ai/langgraph-mcp",
+    "description": "Orchestrate LangGraph agents and workflows through MCP.",
+    "category": "ai-agents-and-memory",
+    "language": "Python",
+    "provider": "LangChain",
+    "tags": [
+      "agents",
+      "orchestration",
+      "langgraph"
+    ],
+    "official": true
+  },
+  {
+    "name": "Ollama MCP Bridge",
+    "url": "https://github.com/jaspertvdm/mcp-server-ollama-bridge",
+    "description": "Run local Llama, Mistral, and Qwen models via Ollama through MCP.",
+    "category": "ai-agents-and-memory",
+    "language": "Python",
+    "provider": "Community",
+    "tags": [
+      "ollama",
+      "local-llm",
+      "inference"
+    ],
+    "official": false
+  },
+  {
+    "name": "Hugging Face MCP Server",
+    "url": "https://github.com/evalstate/hf-mcp-server",
+    "description": "Access Hugging Face models, datasets, and Spaces from MCP clients.",
+    "category": "ai-agents-and-memory",
+    "language": "Python",
+    "provider": "Community",
+    "tags": [
+      "huggingface",
+      "models",
+      "ml"
+    ],
+    "official": false
+  },
+  {
+    "name": "OpenAI MCP Bridge",
+    "url": "https://github.com/jaspertvdm/mcp-server-openai-bridge",
+    "description": "Bridge OpenAI GPT models into MCP-compatible agent workflows.",
+    "category": "ai-agents-and-memory",
+    "language": "Python",
+    "provider": "Community",
+    "tags": [
+      "openai",
+      "gpt",
+      "inference"
+    ],
+    "official": false
+  },
+  {
+    "name": "CrewAI MCP Server",
+    "url": "https://github.com/crewAIInc/crewAI",
+    "description": "Multi-agent orchestration framework with MCP integration support.",
+    "category": "ai-agents-and-memory",
+    "language": "Python",
+    "provider": "CrewAI",
+    "tags": [
+      "agents",
+      "multi-agent",
+      "orchestration"
+    ],
+    "official": true
+  },
+  {
+    "name": "LlamaIndex MCP Server",
+    "url": "https://github.com/run-llama/llama_index",
+    "description": "Data framework for LLM apps with MCP tool and agent connectors.",
+    "category": "ai-agents-and-memory",
+    "language": "Python",
+    "provider": "LlamaIndex",
+    "tags": [
+      "rag",
+      "indexing",
+      "agents"
+    ],
+    "official": true
+  },
+  {
+    "name": "Graphiti MCP Server",
+    "url": "https://github.com/getzep/graphiti",
+    "description": "Temporal knowledge graphs for agent memory and context building.",
+    "category": "ai-agents-and-memory",
+    "language": "Python",
+    "provider": "Zep",
+    "tags": [
+      "knowledge-graph",
+      "memory",
+      "temporal"
+    ],
+    "official": true
+  },
+  {
+    "name": "dbt MCP Server",
+    "url": "https://github.com/dbt-labs/dbt-mcp",
+    "description": "Run dbt models, tests, and documentation workflows via MCP.",
+    "category": "data-analytics-and-bi",
+    "language": "Python",
+    "provider": "dbt Labs",
+    "tags": [
+      "dbt",
+      "analytics",
+      "transform"
+    ],
+    "official": true
+  },
+  {
+    "name": "Metabase MCP Server",
+    "url": "https://www.metabase.com/docs/latest/ai/mcp",
+    "description": "Query dashboards and explore data in Metabase BI.",
+    "category": "data-analytics-and-bi",
+    "language": "TypeScript",
+    "provider": "Metabase",
+    "tags": [
+      "bi",
+      "dashboards",
+      "sql"
+    ],
+    "official": true
+  },
+  {
+    "name": "Grafana MCP Server",
+    "url": "https://github.com/grafana/mcp-grafana",
+    "description": "Explore Grafana dashboards, alerts, and observability data.",
+    "category": "data-analytics-and-bi",
+    "language": "Go",
+    "provider": "Grafana",
+    "tags": [
+      "monitoring",
+      "dashboards",
+      "observability"
+    ],
+    "official": true
+  },
+  {
+    "name": "Datadog MCP Server",
+    "url": "https://github.com/datadog-labs/mcp-server",
+    "description": "Query metrics, logs, and monitors from Datadog via the official Datadog Labs MCP server.",
+    "category": "data-analytics-and-bi",
+    "language": "Python",
+    "provider": "Datadog",
+    "tags": [
+      "datadog",
+      "metrics",
+      "logs"
+    ],
+    "official": true
+  },
+  {
+    "name": "Google GenAI Toolbox",
+    "url": "https://github.com/googleapis/genai-toolbox",
+    "description": "Connect agents to BigQuery, Cloud SQL, Spanner, and other Google data sources.",
+    "category": "data-analytics-and-bi",
+    "language": "Go",
+    "provider": "Google",
+    "tags": [
+      "bigquery",
+      "gcp",
+      "data"
+    ],
+    "official": true
+  },
+  {
+    "name": "Amplitude MCP Server",
+    "url": "https://amplitude.com/docs/amplitude-ai/amplitude-mcp",
+    "description": "Analyze product analytics events and user behavior in Amplitude.",
+    "category": "data-analytics-and-bi",
+    "language": "TypeScript",
+    "provider": "Amplitude",
+    "tags": [
+      "product-analytics",
+      "events",
+      "bi"
+    ],
+    "official": true
+  },
+  {
+    "name": "Mixpanel MCP Server",
+    "url": "https://docs.mixpanel.com/docs/mcp",
+    "description": "Query Mixpanel funnels, retention, and event analytics.",
+    "category": "data-analytics-and-bi",
+    "language": "TypeScript",
+    "provider": "Mixpanel",
+    "tags": [
+      "analytics",
+      "funnels",
+      "product"
+    ],
+    "official": true
+  },
+  {
+    "name": "Netdata MCP Server",
+    "url": "https://github.com/netdata/netdata",
+    "description": "Real-time infrastructure monitoring and health metrics via MCP.",
+    "category": "data-analytics-and-bi",
+    "language": "C",
+    "provider": "Netdata",
+    "tags": [
+      "monitoring",
+      "infra",
+      "metrics"
+    ],
+    "official": true
+  },
+  {
+    "name": "1Password MCP Server",
+    "url": "https://github.com/CakeRepository/1Password-MCP",
+    "description": "Community-maintained integration for accessing 1Password vault items in agent workflows.",
+    "category": "security-and-identity",
+    "language": "Go",
+    "provider": "Community",
+    "tags": [
+      "secrets",
+      "passwords",
+      "vault"
+    ],
+    "official": false
+  },
+  {
+    "name": "Snyk MCP Server",
+    "url": "https://github.com/snyk/studio-mcp",
+    "description": "Scan dependencies and code for vulnerabilities with Snyk.",
+    "category": "security-and-identity",
+    "language": "TypeScript",
+    "provider": "Snyk",
+    "tags": [
+      "security",
+      "vulnerabilities",
+      "dependencies"
+    ],
+    "official": true
+  },
+  {
+    "name": "Auth0 MCP Server",
+    "url": "https://github.com/auth0/auth0-mcp-server",
+    "description": "Manage Auth0 tenants, applications, and user identity settings.",
+    "category": "security-and-identity",
+    "language": "TypeScript",
+    "provider": "Auth0",
+    "tags": [
+      "auth",
+      "identity",
+      "oauth"
+    ],
+    "official": true
+  },
+  {
+    "name": "Vault MCP Server",
+    "url": "https://github.com/hashicorp/vault-mcp-server",
+    "description": "Read secrets and manage HashiCorp Vault policies via MCP.",
+    "category": "security-and-identity",
+    "language": "Go",
+    "provider": "HashiCorp",
+    "tags": [
+      "secrets",
+      "vault",
+      "security"
+    ],
+    "official": true
+  },
+  {
+    "name": "CrowdStrike MCP Server",
+    "url": "https://github.com/CrowdStrike/falcon-mcp",
+    "description": "Query CrowdStrike Falcon detections and endpoint security data.",
+    "category": "security-and-identity",
+    "language": "Python",
+    "provider": "CrowdStrike",
+    "tags": [
+      "endpoint",
+      "security",
+      "soc"
+    ],
+    "official": true
+  },
+  {
+    "name": "Wiz MCP Server",
+    "url": "https://www.wiz.io/blog/introducing-mcp-server-for-wiz",
+    "description": "Cloud security posture management and risk insights from Wiz.",
+    "category": "security-and-identity",
+    "language": "TypeScript",
+    "provider": "Wiz",
+    "tags": [
+      "cloud-security",
+      "cspm",
+      "risk"
+    ],
+    "official": true
+  },
+  {
+    "name": "Stripe MCP Server",
+    "url": "https://github.com/stripe/agent-toolkit",
+    "description": "Manage Stripe payments, customers, and subscriptions via MCP tools.",
+    "category": "finance-commerce-and-business-apps",
+    "language": "TypeScript",
+    "provider": "Stripe",
+    "tags": [
+      "payments",
+      "billing",
+      "fintech"
+    ],
+    "official": true
+  },
+  {
+    "name": "PayPal MCP Server",
+    "url": "https://github.com/paypal/agent-toolkit",
+    "description": "Process PayPal payments and manage merchant operations.",
+    "category": "finance-commerce-and-business-apps",
+    "language": "TypeScript",
+    "provider": "PayPal",
+    "tags": [
+      "payments",
+      "commerce",
+      "fintech"
+    ],
+    "official": true
+  },
+  {
+    "name": "Plaid MCP Server",
+    "url": "https://plaid.com/docs/resources/mcp/",
+    "description": "Connect bank accounts and retrieve financial transaction data.",
+    "category": "finance-commerce-and-business-apps",
+    "language": "TypeScript",
+    "provider": "Plaid",
+    "tags": [
+      "banking",
+      "finance",
+      "open-banking"
+    ],
+    "official": true
+  },
+  {
+    "name": "Shopify MCP Server",
+    "url": "https://github.com/GeLi2001/shopify-mcp",
+    "description": "Community-maintained integration for Shopify products, orders, and store operations.",
+    "category": "finance-commerce-and-business-apps",
+    "language": "TypeScript",
+    "provider": "Community",
+    "tags": [
+      "ecommerce",
+      "shopify",
+      "retail"
+    ],
+    "official": false
+  },
+  {
+    "name": "Salesforce MCP Server",
+    "url": "https://github.com/salesforcecli/mcp",
+    "description": "Query Salesforce CRM records and manage business workflows.",
+    "category": "finance-commerce-and-business-apps",
+    "language": "TypeScript",
+    "provider": "Salesforce",
+    "tags": [
+      "crm",
+      "sales",
+      "enterprise"
+    ],
+    "official": true
+  },
+  {
+    "name": "HubSpot MCP Server",
+    "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+    "description": "Access HubSpot contacts, deals, and marketing automation data.",
+    "category": "finance-commerce-and-business-apps",
+    "language": "TypeScript",
+    "provider": "HubSpot",
+    "tags": [
+      "crm",
+      "marketing",
+      "sales"
+    ],
+    "official": true
+  },
+  {
+    "name": "QuickBooks MCP Server",
+    "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "description": "Manage QuickBooks accounting records and financial reports.",
+    "category": "finance-commerce-and-business-apps",
+    "language": "TypeScript",
+    "provider": "Intuit",
+    "tags": [
+      "accounting",
+      "finance",
+      "bookkeeping"
+    ],
+    "official": true
+  },
+  {
+    "name": "Square MCP Server",
+    "url": "https://github.com/square/square-mcp-server",
+    "description": "Process Square payments and manage point-of-sale operations.",
+    "category": "finance-commerce-and-business-apps",
+    "language": "TypeScript",
+    "provider": "Square",
+    "tags": [
+      "payments",
+      "pos",
+      "commerce"
+    ],
+    "official": true
+  },
+  {
+    "name": "Anyquery",
+    "url": "https://github.com/julien040/anyquery",
+    "description": "Query 40+ apps and databases with SQL from a single local binary.",
+    "category": "utilities-and-examples",
+    "language": "Go",
+    "provider": "Community",
+    "tags": [
+      "sql",
+      "integration",
+      "local"
+    ],
+    "official": false
+  },
+  {
+    "name": "FastMCP",
+    "url": "https://github.com/jlowin/fastmcp",
+    "description": "Python framework for building MCP servers quickly with decorators.",
+    "category": "utilities-and-examples",
+    "language": "Python",
+    "provider": "Community",
+    "tags": [
+      "framework",
+      "python",
+      "starter"
+    ],
+    "official": false
+  },
+  {
+    "name": "MCP Server Starter",
+    "url": "https://github.com/modelcontextprotocol/create-typescript-server",
+    "description": "Official TypeScript scaffold for creating new MCP servers.",
+    "category": "utilities-and-examples",
+    "language": "TypeScript",
+    "provider": "Model Context Protocol",
+    "tags": [
+      "template",
+      "typescript",
+      "starter"
+    ],
+    "official": true
+  },
+  {
+    "name": "Weather MCP Server",
+    "url": "https://github.com/isdaniel/mcp_weather_server",
+    "description": "Fetch current weather and forecasts from public weather APIs.",
+    "category": "utilities-and-examples",
+    "language": "Python",
+    "provider": "Community",
+    "tags": [
+      "weather",
+      "api",
+      "utility"
+    ],
+    "official": false
+  },
+  {
+    "name": "Google Maps MCP Server",
+    "url": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/google-maps",
+    "description": "Geocoding, directions, and place search via Google Maps.",
+    "category": "utilities-and-examples",
+    "language": "Python",
+    "provider": "Community",
+    "tags": [
+      "maps",
+      "location",
+      "geo"
+    ],
+    "official": false
+  },
+  {
+    "name": "A2ASearch MCP",
+    "url": "https://github.com/tadas-github/a2asearch-mcp",
+    "description": "Search thousands of MCP servers, agents, and CLI tools by capability.",
+    "category": "utilities-and-examples",
+    "language": "TypeScript",
+    "provider": "Community",
+    "tags": [
+      "discovery",
+      "search",
+      "registry"
+    ],
+    "official": false
+  },
+  {
+    "name": "MCP Server Templates",
+    "url": "https://github.com/Data-Everything/mcp-server-templates",
+    "description": "Unified MCP platform connecting many apps behind one interface.",
+    "category": "utilities-and-examples",
+    "language": "TypeScript",
+    "provider": "Community",
+    "tags": [
+      "templates",
+      "multi-tool",
+      "starter"
+    ],
+    "official": false
+  },
+  {
+    "name": "MetaMCP",
+    "url": "https://github.com/metatool-ai/metatool-app",
+    "description": "Middleware MCP server that aggregates and manages multiple connections.",
+    "category": "utilities-and-examples",
+    "language": "TypeScript",
+    "provider": "MetaTool",
+    "tags": [
+      "aggregator",
+      "gateway",
+      "middleware"
+    ],
+    "official": true
+  },
+  {
+    "name": "MCPJungle",
+    "url": "https://github.com/duaraghav8/MCPJungle",
+    "description": "Self-hosted MCP server registry for enterprise AI agent deployments.",
+    "category": "utilities-and-examples",
+    "language": "Go",
+    "provider": "Community",
+    "tags": [
+      "registry",
+      "enterprise",
+      "self-hosted"
+    ],
+    "official": false
+  }
 ]

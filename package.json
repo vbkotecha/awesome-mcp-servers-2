@@ -6,6 +6,12 @@
     "prepare": "node scripts/install-hooks.mjs",
     "validate": "node scripts/validate-data.mjs",
     "generate": "node scripts/generate-readme.mjs",
+    "fetch-logos": "node scripts/fetch-logos.mjs",
+    "generate-landscape": "node scripts/fetch-logos.mjs && node scripts/generate-landscape.mjs",
+    "build-landscape": "node scripts/build-landscape.mjs",
+    "build-landscape:docker": "node scripts/build-landscape.mjs --docker",
+    "build-landscape:pages": "node scripts/build-landscape.mjs --pages",
+    "serve-landscape": "landscape2 serve --landscape-dir landscape/build",
     "check-links": "node scripts/check-links.mjs",
     "install-hooks": "node scripts/install-hooks.mjs"
   }

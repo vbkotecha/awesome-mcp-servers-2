@@ -11,6 +11,7 @@ import {
   providerClearbitDomain,
   providerSharedLogo,
   serverSlug,
+  SERVER_LOGO_URLS,
 } from "./logo-utils.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -138,10 +139,42 @@ async function tryDomainLogo(domain, filenameBase) {
   return null;
 }
 
+async function tryServerLogoUrl(server) {
+  const url = SERVER_LOGO_URLS[server.name];
+  if (!url) {
+    return null;
+  }
+
+  const buffer = await fetchBytes(url);
+  if (!buffer) {
+    return null;
+  }
+
+  const extension = url.split(".").pop()?.toLowerCase();
+  if (extension === "svg") {
+    const svg = buffer.toString("utf8");
+    if (svg.includes("<svg")) {
+      return writeLogoFile(`${serverSlug(server.name)}.svg`, svg);
+    }
+    return null;
+  }
+
+  const mimeType =
+    extension === "jpg" || extension === "jpeg" ? "image/jpeg" : "image/png";
+  const filenameBase = serverSlug(server.name);
+  const svg = rasterToSvg(buffer, mimeType, server.name);
+  return writeLogoFile(`${filenameBase}.svg`, svg);
+}
+
 async function resolveLogoFile(server) {
   const shared = providerSharedLogo(server.provider);
   if (shared) {
     return { filename: shared, type: "shared" };
+  }
+
+  const serverLogo = await tryServerLogoUrl(server);
+  if (serverLogo) {
+    return { filename: serverLogo, type: "brand" };
   }
 
   for (const slug of logoSlugCandidates(server)) {

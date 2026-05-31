@@ -22,7 +22,16 @@ for (const server of servers) {
 }
 
 for (const entries of grouped.values()) {
-  entries.sort((left, right) => left.name.localeCompare(right.name));
+  entries.sort(compareServers);
+}
+
+function compareServers(left, right) {
+  const leftOrder = left.order ?? Number.POSITIVE_INFINITY;
+  const rightOrder = right.order ?? Number.POSITIVE_INFINITY;
+  if (leftOrder !== rightOrder) {
+    return leftOrder - rightOrder;
+  }
+  return left.name.localeCompare(right.name);
 }
 
 const toc = categories

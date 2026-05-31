@@ -336,6 +336,21 @@
     "official": false
   },
   {
+    "name": "Harness MCP Server",
+    "url": "https://github.com/harness/mcp-server",
+    "description": "Official Harness.io MCP server for CI/CD pipelines, deployments, GitOps, and platform engineering workflows.",
+    "category": "developer-tools-and-code-intelligence",
+    "language": "TypeScript",
+    "provider": "Harness",
+    "tags": [
+      "harness",
+      "cicd",
+      "devops"
+    ],
+    "official": true,
+    "order": 0
+  },
+  {
     "name": "GitHub MCP Server",
     "url": "https://github.com/github/github-mcp-server",
     "description": "Official GitHub integration for repos, issues, pull requests, and code search.",

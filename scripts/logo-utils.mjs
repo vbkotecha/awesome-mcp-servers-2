@@ -30,6 +30,7 @@ export const PROVIDER_SLUGS = {
   Google: "google",
   Grafana: "grafana",
   HashiCorp: "hashicorp",
+  Harness: "harness",
   HubSpot: "hubspot",
   "Hugging Face": "huggingface",
   Intuit: "intuit",
@@ -94,6 +95,13 @@ export const NAME_SLUGS = {
   "Zep MCP Server": "zep",
   "Puppeteer MCP Server": "puppeteer",
   "A2ASearch MCP": "algolia",
+  "Hugging Face MCP Server": "huggingface",
+  "Harness MCP Server": "harness",
+};
+
+export const SERVER_LOGO_URLS = {
+  "Harness MCP Server":
+    "https://raw.githubusercontent.com/harness/mcp-server/main/icon.png",
 };
 
 export const PROVIDER_DOMAINS = {
@@ -104,6 +112,7 @@ export const PROVIDER_DOMAINS = {
   E2B: "e2b.dev",
   Exa: "exa.ai",
   Firecrawl: "firecrawl.dev",
+  Harness: "harness.io",
   mem0: "mem0.ai",
   MetaTool: "metatool.ai",
   Pinecone: "pinecone.io",

@@ -100,6 +100,15 @@ function buildItem(server) {
   return lines.join("\n");
 }
 
+function compareServers(left, right) {
+  const leftOrder = left.order ?? Number.POSITIVE_INFINITY;
+  const rightOrder = right.order ?? Number.POSITIVE_INFINITY;
+  if (leftOrder !== rightOrder) {
+    return leftOrder - rightOrder;
+  }
+  return left.name.localeCompare(right.name);
+}
+
 const grouped = new Map(categories.map((category) => [category.id, []]));
 for (const server of servers) {
   grouped.get(server.category)?.push(server);
@@ -113,7 +122,7 @@ for (const category of categories) {
     continue;
   }
 
-  entries.sort((left, right) => left.name.localeCompare(right.name));
+  entries.sort(compareServers);
 
   const official = entries.filter((entry) => entry.official);
   const community = entries.filter((entry) => !entry.official);

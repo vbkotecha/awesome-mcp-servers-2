@@ -22,7 +22,9 @@ MCP is an open protocol that lets AI applications connect to external tools and 
 
 ## MCP Landscape
 
-[![MCP Landscape](assets/mcp-landscape.png)](https://landscape.mcphq.org/)
+<a href="https://landscape.mcphq.org/" target="_blank" rel="noopener noreferrer">
+  <img src="assets/mcp-landscape.png" alt="MCP Landscape">
+</a>
 
 Interactive, searchable map of the MCP servers in this catalog. **[Open the live site →](https://landscape.mcphq.org/)**
 
@@ -42,30 +44,6 @@ See [landscape/README.md](landscape/README.md) for how the landscape is built an
 - [Security and Identity](#security-and-identity) (6)
 - [Finance, Commerce, and Business Apps](#finance-commerce-and-business-apps) (8)
 - [Utilities and Examples](#utilities-and-examples) (9)
-
-## Quality Criteria
-
-We prioritize servers that are:
-
-- **Purposeful** — clear tools/resources for a real workflow
-- **Discoverable** — public repo, docs, or registry listing
-- **Maintainable** — recent activity or official backing
-- **Safe to evaluate** — no obvious spam or impersonation
-
-## Contribute
-
-Found a great MCP server? Read [CONTRIBUTING.md](CONTRIBUTING.md) and open a PR with an entry in `data/servers.json`.
-
-Then regenerate the README:
-
-```bash
-node scripts/generate-readme.mjs
-node scripts/validate-data.mjs
-```
-
-## License
-
-This list is released under the [MIT License](LICENSE).
 
 <a id="official-and-reference"></a>
 
@@ -368,3 +346,27 @@ Helpful utilities, templates, and starter servers for learning MCP.
   `aggregator` `gateway` `middleware`
 - **[Weather MCP Server](https://github.com/isdaniel/mcp_weather_server)** `Python` — Fetch current weather and forecasts from public weather APIs.  
   `weather` `api` `utility`
+
+## Quality Criteria
+
+We prioritize servers that are:
+
+- **Purposeful** — clear tools/resources for a real workflow
+- **Discoverable** — public repo, docs, or registry listing
+- **Maintainable** — recent activity or official backing
+- **Safe to evaluate** — no obvious spam or impersonation
+
+## Contribute
+
+Found a great MCP server? Read [CONTRIBUTING.md](CONTRIBUTING.md) and open a PR with an entry in `data/servers.json`.
+
+Then regenerate the README:
+
+```bash
+node scripts/generate-readme.mjs
+node scripts/validate-data.mjs
+```
+
+## License
+
+This list is released under the [MIT License](LICENSE).

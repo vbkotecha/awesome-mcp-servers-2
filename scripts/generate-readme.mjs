@@ -94,7 +94,9 @@ MCP is an open protocol that lets AI applications connect to external tools and 
 
 ## MCP Landscape
 
-[![MCP Landscape](assets/mcp-landscape.png)](https://landscape.mcphq.org/)
+<a href="https://landscape.mcphq.org/" target="_blank" rel="noopener noreferrer">
+  <img src="assets/mcp-landscape.png" alt="MCP Landscape">
+</a>
 
 Interactive, searchable map of the MCP servers in this catalog. **[Open the live site →](https://landscape.mcphq.org/)**
 
@@ -103,6 +105,8 @@ See [landscape/README.md](landscape/README.md) for how the landscape is built an
 ## Catalog
 
 ${toc}
+
+${sections}
 
 ## Quality Criteria
 
@@ -127,8 +131,6 @@ node scripts/validate-data.mjs
 ## License
 
 This list is released under the [MIT License](LICENSE).
-
-${sections}
 `;
 
 writeFileSync(join(root, "README.md"), readme);

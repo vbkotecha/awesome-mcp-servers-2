@@ -39,7 +39,7 @@ jobs:
           npm install
           npm run build-landscape
         env:
-          LANDSCAPE_BASE_PATH: /awesome-mcp-servers
+          LANDSCAPE_BASE_PATH: ""
       - name: Upload build folder
         uses: actions/upload-pages-artifact@v3
         with:

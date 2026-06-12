@@ -12,9 +12,21 @@ const USER_AGENT = "awesome-mcp-servers-link-checker/1.0";
 /** @type {Map<string, Set<string>>} */
 const links = new Map();
 
+function isLocalhostUrl(url) {
+  try {
+    const host = new URL(url).hostname.toLowerCase();
+    return host === "localhost" || host === "127.0.0.1";
+  } catch {
+    return false;
+  }
+}
+
 function addLink(url, source) {
-  const normalized = url.trim().replace(/[)>.,]+$/, "");
+  const normalized = url.trim().replace(/[`)>.,]+$/, "");
   if (!normalized.startsWith("http://") && !normalized.startsWith("https://")) {
+    return;
+  }
+  if (isLocalhostUrl(normalized)) {
     return;
   }
   if (!links.has(normalized)) {
@@ -45,7 +57,7 @@ function collectFromMarkdown(filePath) {
   }
 
   for (const match of content.matchAll(
-    /(?<![(\[])(https?:\/\/[^\s<>"')\]]+)/g
+    /(?<![(\[])(https?:\/\/[^\s<>"')\]`]+)/g
   )) {
     addLink(match[1], relPath);
   }

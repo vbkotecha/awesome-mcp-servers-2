@@ -1,7 +1,7 @@
 # Awesome MCP Servers
 
 [![MCP](https://img.shields.io/badge/protocol-MCP-blue)](https://modelcontextprotocol.io)
-[![Servers](https://img.shields.io/badge/servers-110-brightgreen)](#catalog)
+[![Servers](https://img.shields.io/badge/servers-111-brightgreen)](#catalog)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A curated catalog of [Model Context Protocol (MCP)](https://modelcontextprotocol.io) servers for research, discovery, and integration planning.
@@ -164,7 +164,7 @@ Browse the web, scrape content, search, and automate browser interactions.
   `puppeteer` `browser` `scraping`
 - **[Tavily MCP Server](https://github.com/tavily-ai/tavily-mcp)** `Official` `Python` — AI-native search and content extraction for research agents.  
   `search` `research` `agents`
-- **[Xquik MCP Server](https://github.com/Xquik-dev/x-twitter-scraper)** `Official` `TypeScript` - Search, monitor, and extract X/Twitter data from Xquik through MCP.
+- **[Xquik MCP Server](https://github.com/Xquik-dev/x-twitter-scraper)** `TypeScript` — Search, monitor, and extract X/Twitter data from Xquik through MCP.  
   `twitter` `social-data` `search`
 
 <a id="filesystems-and-documents"></a>

@@ -1625,5 +1625,21 @@
       "self-hosted"
     ],
     "official": false
+  },
+  {
+    "name": "GodotMCP",
+    "url": "https://github.com/vberai/godot-mcp",
+    "description": "A secure, 100% native GDScript Server-Sent Events (SSE) server bridging Claude, Cursor, and Windsurf directly to Godot 4.x scene trees. No Node.js or C# dependencies required.",
+    "category": "developer-tools-and-code-intelligence",
+    "language": "GDScript",
+    "provider": "VberAI",
+    "tags": [
+      "godot",
+      "developer-tools",
+      "code-intelligence",
+      "claude",
+      "cursor"
+    ],
+    "official": false
   }
 ]

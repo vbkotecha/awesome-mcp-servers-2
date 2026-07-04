@@ -1641,5 +1641,26 @@
       "cursor"
     ],
     "official": false
+  },
+  {
+    "name": "AIServices",
+    "url": "https://github.com/vbkotecha/aiservices-api",
+    "description": "Paid API platform for AI agents \u2014 crypto prices, DeFi yields, market indicators, dispute resolution, and on-chain analytics via x402 micropayments.",
+    "category": "finance-commerce-and-business-apps",
+    "language": "Python",
+    "provider": "AIServices",
+    "tags": [
+      "crypto",
+      "defi",
+      "x402",
+      "micropayments",
+      "dispute-resolution",
+      "mcp",
+      "finance",
+      "agents"
+    ],
+    "endpoints": {
+      "sse": "https://api.aiservices.to/mcp"
+    }
   }
 ]
